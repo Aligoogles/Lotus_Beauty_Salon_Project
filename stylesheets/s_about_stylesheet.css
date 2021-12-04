@@ -1,0 +1,10 @@
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    }
+        .container-2-box-1{
+            flex-basis: 45%;
+        }
+        .container-2-box-2{
+            flex-basis: 45%;
+        }
