@@ -63,3 +63,7 @@ body{
   .col-6{
       align-content: inherit;
   }
+  .services{
+    font-size: 18px;
+    text-align: justify;
+  }
