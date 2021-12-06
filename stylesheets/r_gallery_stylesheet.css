@@ -1,0 +1,23 @@
+body{
+    background-color:#eecbff;
+    text-align: center;
+}
+img{
+    max-width: 300px;
+    max-height: 300px;
+    border-style: solid;
+    border-color: #c797cf;
+}
+.container-1{
+   border-style:solid;
+   border-color:black;
+}
+/*.homeimage {
+    height:200px;
+    width: auto;
+    background: url("images/hair-before.jpg") no-repeat;
+}
+
+.homeimage:hover {
+    background: url("images/hair-before.jpg") no-repeat;
+} */
