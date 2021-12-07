@@ -1,23 +1,24 @@
 body{
-    background-color:#eecbff;
+    background-color: #eecbff;
+    font-family: Roboto;
+}
+h1{
     text-align: center;
 }
+button{
+    background-color: #c797cf;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
 img{
-    max-width: 300px;
-    max-height: 300px;
-    border-style: solid;
-    border-color: #c797cf;
+    width: 300px;
+    height: 300px;
 }
-.container-1{
-   border-style:solid;
-   border-color:black;
-}
-/*.homeimage {
-    height:200px;
-    width: auto;
-    background: url("images/hair-before.jpg") no-repeat;
+.row{
+    margin-left: 125px;
 }
 
-.homeimage:hover {
-    background: url("images/hair-before.jpg") no-repeat;
-} */
