@@ -5,20 +5,20 @@ div > .container{
     text-align:center;
     margin:0 auto;
     padding:0px;
-    width:100%;
+    width: 480px;
     margin-bottom: 20px;
 }
 #playerContainer{
     position:relative;
-    width:100%;
+    width: 480px;
 }
 #videoPlayer{
-    width:100%;
+    width: 480px;
 }
 #playerControls{
-    top:98%;
+    top:240px;
     position: absolute;
-    background-color:#eecbff;
+    /*background-color:#eecbff;*/
     width:100%;
     padding:5px;
     box-sizing:border-box;
@@ -27,11 +27,26 @@ input[type="image"]
 {
     float:left;
     height:20px;
-    margin-left:2px;
+    margin-left:50px;
     margin-right:5px;
     margin-top:2px;
 }
 #volImage{
-    margin-left:150px;
+    margin-right:10px;
     width:20px;
+}
+
+@media screen and (min-width:480px){
+    .stockvideo{
+        width:640px;
+    }
+    #playerContainer{
+        width:640px;
+    }
+    #videoPlayer{
+        width:640px;
+    }
+    #playerControls{
+        top:310px;
+    }
 }
