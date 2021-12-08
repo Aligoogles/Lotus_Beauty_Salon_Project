@@ -1,12 +1,8 @@
-div > img {
+/*Ready for merger*/
+.team-image{
     width:100%;
     height: auto;
 }
-/*div {
-    border:1px;
-    border-style: dotted;
-}*/
-
-.container {
+.container-team {
     margin-top:20px;
 }
