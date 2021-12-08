@@ -16,6 +16,7 @@ body{
   width: 400px;
   height: 400px;
   perspective: 1000px; 
+  cursor: pointer;
 }
 .flip-card-inner {
   position: relative;
@@ -52,7 +53,7 @@ body{
   text-align: justify;
 }
 button{
-  background-color:#c797cf;
+  background-color:#e8a2c5;
   color: black;
   font-size: 18px;
   font-family: Roboto;
@@ -68,7 +69,7 @@ p{
 }
 .booking{
   text-align:justify;
-  margin-left: 235px;
+  margin-left: 125px;
   margin-right: 100px;
 
 }
