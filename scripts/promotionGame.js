@@ -1,4 +1,4 @@
-function changeGame(){
+function changePage(){
     userInput=confirm("Would you like to play a game?");
     if(userInput=true){
         window.location.href="https://aligoogles.github.io/Lotus_Beauty_Salon_Project/promotion.html";
