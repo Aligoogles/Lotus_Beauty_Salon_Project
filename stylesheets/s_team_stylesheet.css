@@ -6,3 +6,17 @@
 .container-team {
     margin-top:20px;
 }
+.saleRedirect {
+    width: auto;
+    height: 30px;
+    background-color: #eecbff;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    cursor: pointer;
+  }
+  @keyframes example {
+    from {background-color: #eecbff;}
+    to {background-color:#ffcbf6;}
+    to {background-color: #d4cbff;}
+  }

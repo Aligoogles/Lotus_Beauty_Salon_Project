@@ -3,18 +3,18 @@
     text-align:center;
     margin:0 auto;
     padding:0px;
-    width: 480px;
+    width: 620px;
     margin-bottom: 20px;
 }
 #playerContainer{
     position:relative;
-    width: 480px;
+    width: 620px;
 }
 #videoPlayer{
-    width: 480px;
+    width: 620px;
 }
 #playerControls{
-    top:240px;
+    top:300px;
     position: absolute;
     /*background-color:#eecbff;*/
     width:100%;
@@ -34,17 +34,31 @@ input[type="image"]
     width:20px;
 }
 
-@media screen and (min-width:480px){
+@media only screen and (max-width:480px){
     .stockvideo{
-        width:640px;
+        width:100%;
     }
     #playerContainer{
-        width:640px;
+        width:100%;
     }
     #videoPlayer{
-        width:640px;
+        width:100%;
     }
     #playerControls{
-        top:310px;
+        top:150px;
+    }
+}
+@media only screen and (max-width:320px){
+    .stockvideo{
+        width:100%;
+    }
+    #playerContainer{
+        width:100%;
+    }
+    #videoPlayer{
+        width:100%;
+    }
+    #playerControls{
+        top:100px;
     }
 }
