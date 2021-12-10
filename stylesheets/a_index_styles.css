@@ -1,9 +1,9 @@
-
 /*Styling body(Ali, Steven, Ross)*/
 html, body {
     width: auto!important; 
     overflow-x: hidden!important;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -12,18 +12,30 @@ html, body {
 
 body {
     background-color: #eecbff;
-    font-family: 'Roboto', helvetica, sans-serif; 
 }
 
-a{
+a {
     text-decoration: none;
     color: #000000;
     cursor: pointer;
 }
 
-/* Index.html page starts here (Aelita 21113131) */
+/* Steven start */
+h1, h2, h3, p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
+}
+p {
+    text-align: justify;
+    font-size: 18px;
+} /* Steven end */
 
-/* Header starts here (Aelita 21113131)*/
+/* Header starts here (Aelita 21113131) */
 #a-header {
     display: -webkit-flex;
     display: -moz-flex;
@@ -74,8 +86,7 @@ transition: 0.2s ease-in-out;
 }
 
 .a-nav-cont {
-    flex: 1;
-    
+    flex: 1; 
 }
 
 .a-nav {
@@ -100,16 +111,116 @@ transition: 0.2s ease-in-out;
 /* Header Ends here */
 
 
-/* Main body starts here (Aelita 21113131) */
-
-.checked {
-    color: yellow;
+/* main body of index.html starts here (Aelita 21113131) */
+button {
+    background: #c797cf;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    background: #c797cf;
+    color: #ffffff;
+    border: none;
+    transform: scale(1.2);
+}
+.a-under-slider {
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+    padding: 20px 50px;
+}
+.a-under-slider h1, h2 {
+    text-align: center;
+}
+.a-box {
+    padding: 20px;
+    margin-bottom: 30px;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.a-box h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.a-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    
+}
+.a-box button {
+    margin: 20px 40px;
+    font-size: 18px;
 }
 
-/* Main body ends here */
+#a-who-we-are h1 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#a-who-we-are img {
+   width: 55%;
+}
+.a-home-about {
+    display: flex;
+    margin-bottom: 80px;
+}
+.a-home-about p {
+    margin: 100px 90px 80px -150px;
+    z-index: 99;
+    justify-content: center;
+    padding: 80px 60px 20px 60px;
+    background-color: #c797cff1;
+    text-align: center;
+}
+#a-testimonials h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.a-cust-review {
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+.a-review-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
 
-/* Footer Starts here (Aelita 21113131) */
+.a-review-box img {
+    width: 150px;
+    height: 120px;
+    margin: auto;
+}
+.a-stars {
+    margin: auto;
+}
+.a-stars p {
+    padding: 20px 0px 0px 0px;
+    align-items: center;
+}
+.checked {
+    color: #d8d21a;
+}
+
+@media screen and (min-width: 900px) {
+    .a-serviceInfo{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+/* main body of index.html ends here (Aelita 21113131) */
+
+/* Footer Starts here  (Aelita 21113131)*/
 .a-footer {
     background-color: #c797cf;
     width: 100%;
@@ -168,10 +279,6 @@ transition: 0.2s ease-in-out;
     transform: scale(1.1,1.1);
 }
 
-/* Footer Ends here */
-
-/* Index.html page ends here (Aelita 21113131) */
-
 @media screen and (max-width: 786px) {
     h1{
         font-size: 25px;
@@ -185,20 +292,20 @@ transition: 0.2s ease-in-out;
         font-size: 15px;
         font-family: 'roboto', Arial, Helvetica, sans-serif;  
     }
-   
 }
-@media screen and (min-width: 480px){
+@media screen and (max-width: 480px){
     h1, h2, h3, p{
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
     h1{
-        font-size: 20px;
+        font-size: 15px;
     }
     h2{
-        font-size: 15px;
+        font-size: 12px;
     }
     p {
         text-align: justify;
         font-size: 12px;
     }
 }
+/* Footer Ends here */
