@@ -1,3 +1,3 @@
-function book(){
-    prompt()=getElementById("book")
+function booking(){
+    
 }
