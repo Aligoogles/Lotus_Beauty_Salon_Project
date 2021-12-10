@@ -1,8 +1,5 @@
 /* Steven's JavaScript*/
 /*Promotion Game*/
-function changePage(){
-        window.location.href="https://aligoogles.github.io/Lotus_Beauty_Salon_Project/promotion.html";
-}
 let playCount=0;
 let win=false;
 function checkWin(clicked_id){
