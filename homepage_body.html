@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="a_homepage_body_styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!--Main body section-->
+        <div id="a-main-section">
+
+            <!--Start of Slider and code taken directly from getbootsrap.com-->
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/homeSlide1.jpg" class="d-block w-100" alt="salon">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/homeSlide2.jpg" class="d-block w-100" alt="sinks">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/homeSlide3.jpg" class="d-block w-100" alt="staff">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- End of Slider-->
+        
+            <div class="a-under-slider">
+                <div id="a-our-services">
+                    <h1>Our Services</h1>
+
+                    <div class="a-serviceInfo">
+                        <div class="a-box">
+                            <h2>Hair</h2>
+                            <img src="images/homeHair.jpg" alt="hair">
+                            <button class="a-service-1" onclick="aHair ()">More info</button>
+                        </div>
+    
+                        <div class="a-box">
+                            <h2>Make up</h2>
+                            <img src="images/homeMakeup.jpg" alt="make-up">
+                            <button class="a-service-2" onclick="aMakeup ()">More info</button>
+                        </div>
+    
+                        <div class="a-box">
+                            <h2>Massage/Spa</h2>
+                            <img src="images/homeMassage.jpg" alt="spa/ massage">
+                            <button class="a-service-3" onclick="aMassage ()">More info</button>
+                        </div>
+    
+                        <div class="a-box">
+                            <h2>Nails</h2>
+                            <img src="images/homeNails.jpg" alt="nails">
+                            <button class="a-service-4" onclick="aNails ()">More info</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="a-who-we-are">
+                    <h1>Who we are</h1>
+
+                    <div class="a-home-about">
+                        <img class="a-about" src="images/salonAbout.jpg" alt="beauty salon">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Accumsan tortor posuere ac ut consequat. Id aliquet risus feugiat in ante metus dictum.
+                            Volutpat sed cras ornare arcu. Morbi tristique senectus et netus et malesuada fames. 
+                            Vulputate dignissim suspendisse in est ante in. Convallis posuere morbi leo urna molestie at elementum eu facilisis. 
+                            Venenatis a condimentum vitae sapien. Turpis massa tincidunt dui ut ornare lectus sit. 
+                            Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. 
+                            Adipiscing enim eu turpis egestas pretium aenean.
+                        </p>    
+                    </div>
+                </div>
+
+                <div id="a-testimonials">
+                    <h1>What our clients say</h1> 
+
+                    <div class="a-cust-review">
+                        <div class="a-review-box">
+                            <img src="images/cust1.jpg" alt="profile image" class="a-rating">
+
+                            <div class="a-stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="a-review-box">
+                            <img src="images/defaultPic.jpg" alt="profile image" class="a-rating">
+
+                            <div class="a-stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="a-review-box">
+                            <img src="images/cust2.jpg" alt="profile image" class="a-rating">
+                            
+                            <div class="a-stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+           
+        </div>
+  
+ 
+        <script src="a_index_script.js"></script>
+
+    </body>
+</html>
