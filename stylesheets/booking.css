@@ -1,15 +1,6 @@
 
 body{
     background-color: #eccbff;
-    text-align: center;
+    text-align: center;   
 }
-.container-1{
-    text-align:center;
-    display: block;
-}
-.form{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:left;
-}
+
