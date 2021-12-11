@@ -8,14 +8,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="a_contact.css">
+        <link rel="stylesheet" href="stylesheets/a_contact.css">
+        <link rel="stylesheet" href="stylesheets/typography.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
 
     <body>
 
-         <!--Header-->
-         <div id="a-header">
+        <!--Header-->
+        <div id="a-header">
             <div class="a-logo-cont">
                 <img class="a-logo" src="images/Lotus_beauty.png" alt="Lotus-flower" >
             </div>
@@ -31,6 +32,9 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="contact.html">Contact us</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="aHamburger()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </ul>
                 </nav>
             </div>
@@ -38,6 +42,8 @@
                 <img class="a-logo" src="images/Lotus_beauty.png" alt="Lotus-flower">
             </div>  
         </div>
+        <!-- End Header-->
+
 
         
         <!-- Main heading-->
@@ -95,22 +101,18 @@
                         
                         <div class="a-input-box">
                             <input type="text" id="a-fullname" name="fullname" required="required" placeholder="Full Name">
-                            <small class="a-error"></small>
                         </div>
                     
                         <div class="a-input-box">
                             <input type="text" id="a-email" name="email" required="required" placeholder="Email">
-                            <small class="a-error"></small>
                         </div>
 
                         <div class="a-input-box">
                             <input type="text" id="a-ph" name="ph" required="required" placeholder="Phone no">
-                            <small class="a-error"></small>
                         </div>
             
                         <div class="a-input-box">
                             <textarea id="a-message" name="message" required="required" placeholder="Message" rows="5"></textarea>
-                            <small class="a-error"></small>
                         </div>
                         
                         <div class="a-input-box">
@@ -157,8 +159,8 @@
             </div>
         </div>
 
-        <script src="a_contact_script.js"></script>
-        <script src="a_index_script.js"></script>
+        <script src="scripts/a_contact_script.js"></script>
+        <script src="scripts/a_index_script.js"></script>
 
     </body>
 </html>

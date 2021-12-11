@@ -1,6 +1,6 @@
 /* Start Index page */
 
-
+/* Star functionality */
 function toggleStar(number) {
     starID = "a-star-"+number;
     var start;
@@ -29,14 +29,23 @@ function toggleStar(number) {
             document.getElementById(starID).className = "fa fa-star checked";
         }
     }
+}
+/* End of star functionality */
 
-  }
+/*Start of hamburger menu 
+function aHamburger() {
+    var x = document.getElementsByClassName("a-nav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
+  /* End of hamburger menu */
 
- 
+
 
   
-
-
 /*Start Footer - Aelita (21113131)*/
 function scrollToTop() {
     window.scrollTo(0, 0);

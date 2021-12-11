@@ -10,15 +10,12 @@ const success = document.querySelector ("#a-success");
 
 
 function validateForm() {
-    
-    eraseDetails();
+   
+    var name = nameInput.value
+    console.log(name);
 
-    let errorMsg = false;
-
-    if (nameInput.value.length < 1) {
-        error[0].innerText="Name cannot be blank";
-        nameInput.classList.add("error-border");
-        errorMsg = true; 
+    if (nameInput.value.split(' ') < 5) {
+        alert("Name must have two or more words");
     }
 
     if (!validEmail (emailInput.value)){
@@ -44,18 +41,4 @@ function validateForm() {
     }
 }
 
-function eraseDetails () {
-    for (let i= 0; i< error.length; i++) {
-        error[i].innerText="";
-    }
-    success.innerText="";
-    nameInput.classList.remove ("error-border");
-    emailInput.classList.remove ("error-border");
-    phoneInput.classList.remove ("error-border");
-    messageInput.classList.remove ("error-border");
-}
 
-function validEmail (emailInput) {
-    let pattern = "";
-    return pattern.test(emailInput);
-}

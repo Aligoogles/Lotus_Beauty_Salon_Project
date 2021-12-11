@@ -20,21 +20,6 @@ a {
     cursor: pointer;
 }
 
-/* Steven start */
-h1, h2, h3, p {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-h1 {
-    font-size: 30px;
-}
-h2 {
-    font-size: 25px;
-}
-p {
-    text-align: justify;
-    font-size: 18px;
-} /* Steven end */
-
 /* Header starts here (Aelita 21113131) */
 #a-header {
     display: -webkit-flex;
@@ -54,7 +39,8 @@ p {
 }
 
 .a-logo img {
-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }  
 
 .a-logo img:hover{
@@ -67,8 +53,13 @@ transition: 0.2s ease-in-out;
 }
 
 .a-logo-cont img {
+    width: 100px;
+    height: 70px;
+
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
+
 .a-logo-cont img:hover {
     transform: scale(1.1,1.1);
 }
@@ -77,6 +68,7 @@ transition: 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
     flex: 3;
+    overflow: hidden;
 }
 
 .a-header-cont{
@@ -86,27 +78,39 @@ transition: 0.2s ease-in-out;
 }
 
 .a-nav-cont {
-    flex: 1; 
+    flex: 1;
+    
 }
 
 .a-nav {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    margin: -5px;
 }
 
 .a-nav li{
     flex-basis: 16%;
     padding: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    border-radius: 1px;
+    margin: 10px; 
     transition: 0.2s ease-in-out;
 }
+
 .a-nav li:hover {
-    transform: scale(1.3,1.3);
+    transform: scale(1.1);
 }
 
 .a-nav a {
-    color: #000000;
+    color: #ffffff;
+    margin: 15px 5px 15px 15px;
 }
+.a-nav .icon {
+    display: none;
+  }
 
 /* Header Ends here */
 
@@ -122,20 +126,24 @@ button {
     border-radius: 20px;
     transition: 0.2s ease-in-out;
 }
+
 button:hover {
     background: #c797cf;
     color: #ffffff;
     border: none;
     transform: scale(1.2);
 }
+
 .a-under-slider {
     max-width: 1200px;
     margin: 60px auto 0 auto;
     padding: 20px 50px;
 }
+
 .a-under-slider h1, h2 {
     text-align: center;
 }
+
 .a-box {
     padding: 20px;
     margin-bottom: 30px;
@@ -163,13 +171,16 @@ button:hover {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
 #a-who-we-are img {
    width: 55%;
 }
+
 .a-home-about {
     display: flex;
     margin-bottom: 80px;
 }
+
 .a-home-about p {
     margin: 100px 90px 80px -150px;
     z-index: 99;
@@ -178,10 +189,12 @@ button:hover {
     background-color: #c797cff1;
     text-align: center;
 }
+
 #a-testimonials h1{
     margin-top: 100px;
     margin-bottom: 50px;
 }
+
 .a-cust-review {
     display: flex;
     justify-content: space-between;
@@ -210,13 +223,6 @@ button:hover {
     color: #d8d21a;
 }
 
-@media screen and (min-width: 900px) {
-    .a-serviceInfo{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
 
 /* main body of index.html ends here (Aelita 21113131) */
 
@@ -279,33 +285,75 @@ button:hover {
     transform: scale(1.1,1.1);
 }
 
-@media screen and (max-width: 786px) {
-    h1{
-        font-size: 25px;
-        font-family: 'roboto', Arial, Helvetica, sans-serif;
-    }
-    h2 {
-        font-size: 20px;
-        font-family: 'roboto', Arial, Helvetica, sans-serif;  
-    }
-    p {
-        font-size: 15px;
-        font-family: 'roboto', Arial, Helvetica, sans-serif;  
+/* Footer Ends here */
+
+/* Media Quesry for header, footer and specific items on index page (Aelita 21113131 )*/
+
+@media screen and (min-width: 900px) {
+    .a-serviceInfo{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 480px){
-    h1, h2, h3, p{
+
+@media screen and (max-width: 1360px) {
+    .a-nav li{
+        font-size: 15px;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
-    h1{
-        font-size: 15px;
+    .a-nav li{
+        margin: 5px; 
     }
-    h2{
-        font-size: 12px;
+
+}
+
+@media screen and (max-width: 1264px) {
+    .a-nav li{
+        font-size: 13px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
-    p {
-        text-align: justify;
+    .a-nav li{
+        margin: 3px; 
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    .a-nav li{
         font-size: 12px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+    .a-logo-cont img {
+        width: 70px;
+        height: 50px;
+        margin: auto;
+    }
+    .a-nav li{
+        margin: 3px; 
+    }
+
+    .a-nav a.icon {
+      float: right;
+      display: block;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .a-nav li{
+        font-size: 10px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
+    .a-logo-cont img {
+        width: 50px;
+        height: 30px;
+        margin: auto;
+    }
+
+    .a-nav li{
+        margin: 2px; 
     }
 }
-/* Footer Ends here */
