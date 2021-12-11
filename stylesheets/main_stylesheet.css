@@ -1,22 +1,562 @@
 /*Typography - The main style of the whole site*/
+/* Steven start */
+h1, h2, h3, p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  text-align: justify;
+  font-size: 18px;
+} /* Steven end */
+
+/* Aelita start */
+button {
+  background: #c797cf;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background: #c797cf;
+  color: #ffffff;
+  border: none;
+  transform: scale(1.2);
+}/* Aelita End */
+
+/* Start Aelita */
+@media screen and (max-width: 1025px) {
+  h1, h2, h3, p {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+      font-size: 28px;
+  }
+  h2 {
+      font-size: 22px;
+   
+  }
+  p {
+      font-size: 20px;
+   
+  }
+  button {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      font-size: 18px;
+  }
+  button {
+      background: #c797cf;
+      color: #ffffff;
+      font-size: 16px;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      border: none;
+      padding: 5px 20px;
+      border-radius: 20px;
+      transition: 0.2s ease-in-out;
+  }
+  button:hover {
+      background: #c797cf;
+      color: #ffffff;
+      border: none;
+      transform: scale(1.2);
+  }
+} /* End Aelita*/
+
+/* Start Ross */
+@media screen and (max-width: 786px) {
+  h1, h2, h3, p {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  h1{
+      font-size: 25px;  
+  }
+  h2 {
+      font-size: 20px;
+  }
+  p {
+      font-size: 15px;
+  }
+  button {
+      background: #c797cf;
+      color: #ffffff;
+      font-size: 15px;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      border: none;
+      padding: 5px 20px;
+      border-radius: 20px;
+      transition: 0.2s ease-in-out;
+  }
+  button:hover {
+      background: #c797cf;
+      color: #ffffff;
+      border: none;
+      transform: scale(1.2);
+  }
+} /* End Ross*/
+
+
+/* Start Aelita */
+@media screen and (max-width: 480px){
+  h1, h2, h3, p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  p {
+    text-align: justify;
+    font-size: 12px;
+  }
+  button {
+    background: #c797cf;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  button:hover {
+    background: #c797cf;
+    color: #ffffff;
+    border: none;
+    transform: scale(1.2);
+  }
+} /* End Aelita*/
+
 /*Header CSS*/
+/* Start (Aelita 21113131)*/
+#a-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: flex;
+  background-color: #c797cf;
+  padding: 30px 0px 20px 0px;
+}
+
+.a-logo {
+  width: 100px;
+  height: 70px;
+  margin: auto;
+}
+
+.a-logo img {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}  
+
+.a-logo img:hover{
+  transform: scale(1.3,1.3);
+}
+
+.a-logo-cont {
+  display: flex;
+  flex: 1;
+}
+
+.a-logo-cont img {
+  width: 100px;
+  height: 70px;
+
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.a-logo-cont img:hover {
+  transform: scale(1.1,1.1);
+}
+
+.a-headNav-cont{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  overflow: hidden;
+}
+
+.a-header-cont{
+  flex: 1;
+  margin: auto;
+  padding: 10px;
+}
+
+.a-nav-cont {
+  flex: 1;
+  
+}
+
+.a-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: -5px;
+}
+
+.a-nav li{
+  flex-basis: 16%;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  border-radius: 1px;
+  margin: 10px; 
+  transition: 0.2s ease-in-out;
+}
+
+.a-nav li:hover {
+  transform: scale(1.1);
+}
+
+.a-nav a {
+  color: #ffffff;
+  margin: 15px 5px 15px 15px;
+}
+.a-nav .icon {
+  display: none;
+}/* Header Ends */
+
+
 /*Footer CSS*/
-/*Media Queries*/
-/*Aelitha CSS*/
+/* Start (Aelita 21113131)*/
+.a-footer {
+  background-color: #c797cf;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-footer-logo img {
+  width: 100px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: -20px;
+  transition: 0.2s ease-in-out;
+}
+.a-footer-logo img:hover {
+  transform: scale(1.1,1.1); 
+}
+
+.a-footer-menu a { 
+  margin:0px 40px 0px 150px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: text-decoration-color 800ms;
+}
+
+.a-footer-menu a:hover {
+  text-decoration: underline 0.15em #eecbff;
+  color: #000000;
+}
+
+.a-icons img {
+  margin:0px 20px 0px;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.a-icons img:hover {
+  transform: scale(2,2);
+}
+
+.a-back-to-top {
+  margin-left:20px;
+  width: 30px;
+  height: auto; 
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.a-back-to-top img:hover {
+  transform: scale(1.1,1.1);
+}
+
+/* Footer Ends  */
+
+/*Aelita CSS (21113131)*/
+
+/* Start of Index.html */
+button {
+  background: #c797cf;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #c797cf;
+  color: #ffffff;
+  border: none;
+  transform: scale(1.2);
+}
+
+.a-under-slider {
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  padding: 20px 50px;
+}
+
+.a-under-slider h1, h2 {
+  text-align: center;
+}
+
+.a-box {
+  padding: 20px;
+  margin-bottom: 30px;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.a-box h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.a-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  
+}
+.a-box button {
+  margin: 20px 40px;
+  font-size: 18px;
+}
+
+#a-who-we-are h1 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#a-who-we-are img {
+ width: 55%;
+}
+
+.a-home-about {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.a-home-about p {
+  margin: 100px 90px 80px -150px;
+  z-index: 99;
+  justify-content: center;
+  padding: 80px 60px 20px 60px;
+  background-color: #c797cff1;
+  text-align: center;
+}
+
+#a-testimonials h1{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.a-cust-review {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.a-review-box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.a-review-box img {
+  width: 150px;
+  height: 120px;
+  margin: auto;
+}
+.a-stars {
+  margin: auto;
+}
+.a-stars p {
+  padding: 20px 0px 0px 0px;
+  align-items: center;
+}
+.checked {
+  color: #d8d21a;
+}
+/* index.html Ends */
+
+/* Contact page Starts*/
+
+.a-main-contact-area {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.a-main-contact-area .a-name {
+  max-width: 800px;
+  text-align: center;
+}
+
+.a-main-contact-area .a-name h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.a-main-contact-area .a-name h2 {
+  font-size: 25px;
+  font-weight: 500px;
+}
+.a-contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.a-contact-container .a-contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+} 
+
+.a-contact-container .a-contact-info .a-contact-box {
+  position:relative;
+  padding: 20px 0px;
+  display: flex;
+}
+
+.a-contact-container .a-contact-info .a-contact-box .a-contact-icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  background: #c797cf;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.a-contact-container .a-contact-info .a-contact-box .a-contact-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.a-contact-form {
+  width: 60%;
+  padding: 40px;
+  background: #c797cf;
+  margin-top: -80px;
+}
+
+.a-contact-form .a-input-box {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.a-contact-form .a-input-box input,
+.a-contact-form .a-input-box textarea  {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  margin: 10px 0px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.a-contact-form .a-input-box input[type="submit"] {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.a-error {
+  color: red;
+}
+
+.a-error-border {
+  border: 2px solid red;
+}
+
+#a-success {
+  color: green;
+}
+
+.a-map-box {
+  width: 100%;
+  padding: 1% 8% 1%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 786px) {
+
+  .a-contact-box {
+    padding: 50px;
+  }
+  .a-contact-container {
+    flex-direction: column;
+  }
+  .a-contact-container .a-contact-info {
+    margin-bottom: 40px;  
+    width: 100%;
+  }
+
+  .a-contact-form {
+  width: 100%;
+  margin-top: 80px;
+  }
+  .a-map-box {
+    width: 100%;
+    padding: 1% 4% 1%;
+    margin-bottom: 10px;
+  }
+}
+/* Contact page Ends*/
+
 /* Ross CSS (21132305) */
 /* Services page CSS */
 body{
-    background-color: #eecbff;
+  background-color: #eecbff;
 }
 .heading{
-    text-align:center;
-    background-color: #eecbff;
-    font-size:30px;
-    margin-top: 50px;
+  text-align:center;
+  background-color: #eecbff;
+  font-size:30px;
+  margin-top: 50px;
 }
 .container-1{
-    background-color: #eecbff;
-    position:inherit;
+  background-color: #eecbff;
+  position:inherit;
 }
 .flip-card {
   background-color: transparent;
@@ -43,7 +583,6 @@ body{
   height: 100%;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
-
 }
 .flip-card-front {
   background-color: #bbb;
@@ -102,7 +641,7 @@ span{
 @media only screen and (max-width:1020px){
   img{
     width:95%;
-    height:auto;
+    height:auto;  
   }
 }
 
@@ -115,12 +654,12 @@ span{
 }
 
 .column img{
-    width: 300px;
-    height: 300px;
-    border-style: dashed;
-    border: 1px 1px 1px 1px;
-    border-color: #c797cf;
-    cursor: pointer;
+  width: 300px;
+  height: 300px;
+  border-style: dashed;
+  border: 1px 1px 1px 1px;
+  border-color: #c797cf;
+  cursor: pointer;
 }
 
 button{
@@ -273,15 +812,9 @@ button{
 
 @media only screen and (max-width:1020px){
   .column img{
-    width:95%;
-    height:auto;
+  width:95%;
+  height:auto;
   }
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /*Booking CSS */
@@ -296,135 +829,205 @@ h2{
 /*Steven (21130736) CSS*/
 /*About Page*/
 .stockvideo{
-    text-align:center;
-    margin:0 auto;
-    padding:0px;
-    width: 620px;
-    margin-bottom: 20px;
+  text-align:center;
+  margin:0 auto;
+  padding:0px;
+  width: 620px;
+  margin-bottom: 20px;
 }
 
 #playerContainer{
-    position:relative;
-    width: 620px;
+  position:relative;
+  width: 620px;
 }
 
 #videoPlayer{
-    width: 620px;
+  width: 620px;
 }
 
 #playerControls{
-    top:300px;
-    position: absolute;
-    /*background-color:#eecbff;*/
-    width:100%;
-    padding:5px;
-    box-sizing:border-box;
+  top:300px;
+  position: absolute;
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
 }
 
-input[type="image"]
-{
-    float:left;
-    height:20px;
-    margin-left:50px;
-    margin-right:5px;
-    margin-top:2px;
+input[type="image"] {
+  float:left;
+  height:20px;
+  margin-left:50px;
+  margin-right:5px;
+  margin-top:2px;
 }
 
 #volImage{
-    margin-right:10px;
-    width:20px;
+  margin-right:10px;
+  width:20px;
 }
 
 @media only screen and (max-width:480px){
-    .stockvideo{
-        width:100%;
-    }
-    #playerContainer{
-        width:100%;
-    }
-    #videoPlayer{
-        width:100%;
-    }
-    #playerControls{
-        top:150px;
-    }
+  .stockvideo{
+    width:100%;
+  }
+  #playerContainer{
+    width:100%;
+  }
+  #videoPlayer{
+    width:100%;
+  }
+  #playerControls{
+    top:150px;
+  }
 }
 
 @media only screen and (max-width:320px){
-    .stockvideo{
-        width:100%;
-    }
-    #playerContainer{
-        width:100%;
-    }
-    #videoPlayer{
-        width:100%;
-    }
-    #playerControls{
-        top:100px;
-    }
+  .stockvideo{
+    width:100%;
+  }
+  #playerContainer{
+    width:100%;
+  }
+  #videoPlayer{
+    width:100%;
+  }
+  #playerControls{
+    top:100px;
+  }
 }
 
 /*Team Page*/
 
 main {
-    margin-left:10%;
-    margin-right:10%;
+  margin-left:10%;
+  margin-right:10%;
 }
 .team-image{
-    width:100%;
-    height: auto;
+  width:100%;
+  height: auto;
 }
 .container-team {
-    margin-top:20px;
+  margin-top:20px;
 }
 .saleRedirect {
-    width: auto;
-    height: 50px;
-    background-color: #eecbff;
-    animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: 5;
-    cursor: pointer;
-  }
-  @keyframes example {
-    from {background-color: #eecbff;}
-    to {background-color:#ffcbf6;}
-    to {background-color: #d4cbff;}
-  }
+  width: auto;
+  height: 50px;
+  background-color: #eecbff;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  cursor: pointer;
+}
+@keyframes example {
+  from {background-color: #eecbff;}
+  to {background-color:#ffcbf6;}
+  to {background-color: #d4cbff;}
+}
 .teamHeading{
     text-align:center;
 }
 .paraInfoAbout{
-    font-size: large;
-    text-align: justify;
+  font-size: large;
+  text-align: justify;
 }
 .infoAbout{
-    width:75%;
-    margin-left:auto;
-    margin-right:auto;
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /*Steven's CSS - Promotion Page*/
 
 .game-content-buttons-1, .game-content-buttons-2{
-    display: flex;
-    justify-content: space-around;
-    margin-top:20px;
-    margin-bottom:20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 #cream, #hairbrush, #hairdryer, #lipstick, #lotion, #pedicure, #seat, #shampoo, #straightener, #zenstones{
-    background-color: transparent;
+  background-color: transparent;
 }
 .discountPara {
-    text-align: center;
-    font-size: 15px;
+  text-align: center;
+  font-size: 15px;
 }
+
 .discountHead{
-    text-align: center;
-    font-size: larger;
+  text-align: center;
+  font-size: larger;
 }
+
 #endGameMessage {
-    text-align: center;
-    font-size: larger;
+  text-align: center;
+  font-size: larger;
+}
+
+/* Media Queries Steven Ross Aelita */
+@media screen and (min-width: 900px) {
+  .a-serviceInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .a-nav li{
+    font-size: 15px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+
+  .a-nav li{
+    margin: 5px; 
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .a-nav li{
+    font-size: 13px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  .a-nav li{
+    margin: 3px; 
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .a-nav li{
+    font-size: 12px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+
+  .a-logo-cont img {
+    width: 70px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .a-nav li{
+    margin: 3px; 
+  }
+
+  .a-nav a.icon {
+    float: right;
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 600px){
+  .a-nav li{
+    font-size: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+
+  .a-logo-cont img {
+    width: 50px;
+    height: 30px;
+    margin: auto;
+  }
+
+  .a-nav li{
+    margin: 2px; 
+  }
 }
