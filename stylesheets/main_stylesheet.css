@@ -295,6 +295,7 @@ h2{
 
 /*Steven (21130736) CSS*/
 /*About Page*/
+/*Video Player's styling*/
 .stockvideo{
     text-align:center;
     margin:0 auto;
@@ -334,7 +335,7 @@ input[type="image"]
     margin-right:10px;
     width:20px;
 }
-
+/*Video to change when approching tablet size*/
 @media only screen and (max-width:480px){
     .stockvideo{
         width:100%;
@@ -350,6 +351,7 @@ input[type="image"]
     }
 }
 
+/*Video to change when approching phone size*/
 @media only screen and (max-width:320px){
     .stockvideo{
         width:100%;
@@ -378,6 +380,7 @@ main {
 .container-team {
     margin-top:20px;
 }
+/*Promotion link to webpage*/
 .saleRedirect {
     width: auto;
     height: 50px;
@@ -395,6 +398,7 @@ main {
 .teamHeading{
     text-align:center;
 }
+/*Information about the company paragraph*/
 .paraInfoAbout{
     font-size: large;
     text-align: justify;
@@ -406,7 +410,7 @@ main {
 }
 
 /*Steven's CSS - Promotion Page*/
-
+/*Button's styling for game*/
 .game-content-buttons-1, .game-content-buttons-2{
     display: flex;
     justify-content: space-around;
@@ -416,6 +420,7 @@ main {
 #cream, #hairbrush, #hairdryer, #lipstick, #lotion, #pedicure, #seat, #shampoo, #straightener, #zenstones{
     background-color: transparent;
 }
+/*Text styling on page*/
 .discountPara {
     text-align: center;
     font-size: 15px;
