@@ -525,18 +525,6 @@ button:hover {
   cursor: pointer;
 }
 
-.a-error {
-  color: red;
-}
-
-.a-error-border {
-  border: 2px solid red;
-}
-
-#a-success {
-  color: green;
-}
-
 .a-map-box {
   width: 100%;
   padding: 1% 8% 1%;
