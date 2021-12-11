@@ -852,6 +852,10 @@ h2{
 
 /*Steven (21130736) CSS*/
 /*About Page*/
+.s-container-2{
+  margin-bottom: 50px;
+
+}
 /*Video Player's styling*/
 .stockvideo{
   text-align:center;
@@ -902,7 +906,7 @@ input[type="image"] {
     width:100%;
   }
   #playerControls{
-    top:150px;
+    top:120px;
   }
 }
 
@@ -959,6 +963,7 @@ main {
 .paraInfoAbout{
   font-size: large;
   text-align: justify;
+  margin-bottom:50px;
 }
 .infoAbout{
   width:75%;
