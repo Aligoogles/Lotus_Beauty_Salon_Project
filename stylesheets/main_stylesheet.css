@@ -5,6 +5,7 @@ h1, h2, h3, p {
 }
 h1 {
   font-size: 30px;
+  font-weight: normal;
 }
 h2 {
   font-size: 25px;
@@ -628,9 +629,8 @@ button{
   background-color:#e8a2c5;
   color: black;
   size: 18px;
-  
-  font-family: Roboto;
   }
+
 p{
   font-size: 18px;
 }
@@ -666,6 +666,7 @@ span{
     height:auto;  
   }
 }
+/* Services page ends */
 
 /* Gallery CSS */
 .center{
@@ -688,7 +689,6 @@ button{
   background-color:#e8a2c5;
   color: black;
   font-size: 18px;
-  font-family: Roboto;
   cursor: pointer;
 }
 
@@ -717,7 +717,7 @@ button{
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 50px;
+  padding-top: 10px;
   left: 0;
   top: 0;
   width: 100%;
@@ -838,6 +838,7 @@ button{
   height:auto;
   }
 }
+/* Gallery page ends */
 
 /*Booking CSS */
 h2{
@@ -847,6 +848,7 @@ h2{
 .submit{
   margin: 40px;
 }
+/* Booking page ends */
 
 /*Steven (21130736) CSS*/
 /*About Page*/
