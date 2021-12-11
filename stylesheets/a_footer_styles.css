@@ -78,12 +78,4 @@ a{
 
 .a-back-to-top img:hover {
     transform: scale(1.1,1.1);
-}
-
-@media screen and (max-width: 786px) {
-
-}
-@media screen and (min-width: 480px){
-
-}
-/* Footer Ends here */
+}/* Footer Ends here */

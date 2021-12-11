@@ -11,7 +11,9 @@ h2 {
 p {
     text-align: justify;
     font-size: 18px;
-} 
+} /* Steven end */
+
+/* Aelita start */
 button {
     background: #c797cf;
     color: #ffffff;
@@ -27,7 +29,7 @@ button:hover {
     color: #ffffff;
     border: none;
     transform: scale(1.2);
-}/* Steven end */
+}/* Aelita End */
 
 /* Start Aelita */
 @media screen and (max-width: 1025px) {
@@ -66,7 +68,7 @@ button:hover {
         border: none;
         transform: scale(1.2);
     }
-} /* Start Aelita*/
+} /* End Aelita*/
 
 /* Start Ross */
 @media screen and (max-width: 786px) {
@@ -98,7 +100,7 @@ button:hover {
         border: none;
         transform: scale(1.2);
     }
-} /* Start Ross*/
+} /* End Ross*/
 
 
 /* Start Aelita */
