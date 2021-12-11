@@ -15,6 +15,27 @@ p {
 } /* Steven end */
 
 /* Aelita start */
+html, body {
+  width: auto!important; 
+  overflow-x: hidden!important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eecbff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
 button {
   background: #c797cf;
   color: #ffffff;
