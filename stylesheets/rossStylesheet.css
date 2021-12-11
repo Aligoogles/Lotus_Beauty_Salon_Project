@@ -120,6 +120,7 @@ button{
   color: black;
   font-size: 18px;
   font-family: Roboto;
+  cursor: pointer;
 }
 .row > .column {
   padding: 0 8px;
@@ -272,6 +273,9 @@ button{
 }
 
 /*Booking CSS */
+h2{
+  margin: 50px;
+}
 .submit{
   margin: 40px;
 }
