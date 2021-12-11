@@ -10,9 +10,8 @@
     
     <link href="stylesheets/rossStylesheet.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/a_header_styles.css" type="text/css" rel="stylesheet">
-    <link href="stylesheets/a_index_styles.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/a_footer_styles.css" type="text/css" rel="stylesheet">
-    <link href="stylesheets/main_stylesheet.css" type="text/css" rel="stylesheet">
+    <link href="typography.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -44,10 +43,10 @@
         
     </header>
     <main>
-            <h1>Make an Appointment</h1>
-            <h2 style="font-size: 25px;">Please fill out the form below to <span style="text-decoration: underline;">make an appoinment</span> with us at The Lotus Beauty Salon. Thank you.</h2>
+            <h1 style="text-align: center;">Make an Appointment</h1>
+            <h2 style="font-size: 25px; text-align: center;">Please fill out the form below to <span style="text-decoration: underline;">make an appoinment</span> with us at The Lotus Beauty Salon. Thank you.</h2>
             <div class="conatiner-1">
-                <form class="formBooking" id="hide" action="#" onsubmit="formChange(); return false">
+                <form class="formBooking" id="hide" action="#" onsubmit="formChange(); return false" style="display: flex; justify-content: center; align-items: center;">
                     <fieldset>
                         <label for="fname">*First Name:</label><br>
                         <input type="text" id="fname" name="fname"><br>
@@ -95,7 +94,7 @@
                             </optgroup>
                         </select><br>
                         <br>
-                        <button onclick="submit()">Continue</button>
+                        <button onclick="submit()" class="submit">Continue</button>
                     </fieldset>
                 </form>
         </div>
