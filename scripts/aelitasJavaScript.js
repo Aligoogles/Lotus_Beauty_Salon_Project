@@ -32,6 +32,8 @@ function toggleStar(number) {
 }
 /* End of star functionality */
 
+
+
 /*Start of hamburger menu 
 function aHamburger() {
     var x = document.getElementsByClassName("a-nav");
@@ -42,7 +44,6 @@ function aHamburger() {
     }
 }
   /* End of hamburger menu */
-
 
 
   
