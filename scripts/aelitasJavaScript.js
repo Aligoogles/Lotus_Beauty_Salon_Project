@@ -107,6 +107,7 @@ function aHamburger() {
 
   
 /*Start Footer - Aelita (21113131)*/
+/* When arrow is pressed it srolls up to top of the page */
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
