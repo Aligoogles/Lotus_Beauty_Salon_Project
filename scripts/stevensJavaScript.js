@@ -1,5 +1,6 @@
-/* Steven's JavaScript*/
+/*Steven (21130736) JavaScript*/
 /*Promotion Game*/
+/*Getting results from user and computer*/
 let playCount=0;
 let win=false;
 function checkWin(clicked_id){
@@ -8,8 +9,10 @@ function checkWin(clicked_id){
     var result=compare(userChoice,computerPick);
     alert(result);
 }
+/*Creating a result for the computer to use*/
 function pick(){
     var computerPick=Math.random();
+    /*Assigned ids in intervals between 0 and 1 for computer options*/
     if(computerPick<0.1){
         computerPick="cream";
     }
@@ -42,30 +45,32 @@ function pick(){
     }
     return computerPick;
 }
+/*Return statements and different codes to customer*/
+/*Different amount of clicks needed to give different values of discount*/
 function compare(userChoice,computerPick){ 
     var result="You lose";
     if(userChoice==computerPick && playCount<=5){
-        result="You won! here is the code for 25% off";
+        result="You won! here is the code (B-e-a-uty25) for 25% off";
         win=true;
     }
     else if(userChoice==computerPick && playCount<=10){
-        result="You won! here is the code for 20% off";
+        result="You won! here is the code (B-e-a-uty20) for 20% off";
         win=true;
     }
     else if(userChoice==computerPick && playCount<=15){
-        result="You won! here is the code for 15% off";
+        result="You won! here is the code (B-e-a-uty15) for 15% off";
         win=true;
     }
     else if(userChoice==computerPick && playCount<=20){
-        result="You won! here is the code for 10% off";
+        result="You won! here is the code (B-e-a-uty10) for 10% off";
         win=true;
     }
     else if(userChoice==computerPick && playCount >=20){
-        result="You won! here is the code for 5% off";
+        result="You won! here is the code (B-e-a-uty5) for 5% off";
         win=true;
     }
     else{
-        result="Sorry, you did not win";;
+        result="Sorry, you did not win. Try again";;
     }
     playCount++;
     if(playCount==5 || win==true){
@@ -73,32 +78,34 @@ function compare(userChoice,computerPick){
     }
     return result;
 }
+/*Returning results to the page*/
 function endGame(){
     let winStatus="lost";
     if(win==true){
         winStatus="won";
     }
-    let end="It took "+playCount+" changes. You have "+winStatus;
-    document.getElementById("endGameMessage").innerHTML=end;
+    let endProGame="It took "+playCount+" changes but you have "+winStatus;
+    document.getElementById("endGameMessage").innerHTML=endProGame;
 }
 
 /*Video Player JavaScript*/
+/*Load the player*/
 document.addEventListener("DOMContentLoaded", function() {startplayer();},false);
 var player;
 function startplayer(){
     player=document.getElementById("videoPlayer");
     player.controls=flase;
 }
+/*Play function*/
 function playVideo(){
     player.play();
 }
+/*Pause function*/
 function pauseVideo(){
     player.pause();
 }
+/*Stop function*/
 function stopVideo(){
     player.pause();
     player.currentTime=0;
-}
-function changeVol(){
-    player.volume=document.getElementById("changeVolume").value;
 }

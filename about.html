@@ -10,7 +10,7 @@
     <link href="stylesheets/main_stylesheet.css" rel="stylesheet">
 
 </head>
-<body style="background-color: #eecbff;">
+<body>
     <header>
         <div id="a-header">
             <div class="a-logo-cont">
@@ -42,6 +42,7 @@
     <main class="left-right-side-margins">
         <h1 class="teamHeading">About Us</h1>
         <div class="infoAbout">
+        <!--Paragraph about the company and the history-->
             <p class="paraInfoAbout">Lotus Beauty Salon was found in 2008 and since then has grown into a major establishment over the last number of years.
                 We have expanded our services adding nails and make up services in 2010 and massages in 2016. We believe that we have become an important member of the Dublin community and by entension,
                 the Irish nation. Out team has been part of major events in people lives such as their wedding day graduation or even just to perk them up.
@@ -54,32 +55,26 @@
             </div>
         </div>
         <!--Google Map/Image of building & Paragraph-->
-            <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
-                <div class="row justify-content-evenly">
-                    <div class="col-xl-5" id="playerContainer">
-                        <video id="videoPlayer">
-                            <source src="images/production ID_3996903.mp4" type="video/mp4">
-                        </video>
-                        <div id="playerControls">
-                            <input type="image" src="images/playerButtons/play.png" onclick="playVideo()" id="playButton">
-                            <input type="image" src="images/playerButtons/pause.png" onclick="pauseVideo()" id="pauseButton">
-                            <input type="image" src="images/playerButtons/stop.png" onclick="stopVideo()" id="stopButton">
-                            <img src="images/playerButtons/volume.jpg" id="volImage">
-                            <input type="range" id="changeVolume" onchange="changeVolume()" step="0.05" min="0" max="1" value="1">
-                        </div>
-                    </div>
-                    <div class="col-xl-4 offset-1">
-                            <h3>Directions</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <h3>Find Us</h3>
-                            <p>Mayor Street Lower, <br>
-                                International Financial Centre, <br>
-                                Dublin 1</p>
+        <div id="playerContainer" style="margin-left: auto; margin-right: auto;">
+            <video id="videoPlayer">
+                <source src="images/production ID_3996903.mp4" type="video/mp4">
+            </video>
+            <div id="playerControls">
+                <input type="image" src="images/playerButtons/play.png" onclick="playVideo()" id="playButton">
+                    <input type="image" src="images/playerButtons/pause.png" onclick="pauseVideo()" id="pauseButton">
+                    <input type="image" src="images/playerButtons/stop.png" onclick="stopVideo()" id="stopButton">
                     </div>
                 </div>
-            </div>
+        <!--Directions and information about getting to building and address-->
+                <h3>Directions</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h3>Find Us</h3>
+                    <p>Mayor Street Lower, <br>
+                        International Financial Centre, <br>
+                        Dublin 1</p>
+            
             <div class="s-container-2">
                 <div class="col-sm-12">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6830759973864!2d-6.245186848308867!3d53.34892917988132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e0!3m2!1sen!2sie!4v1638736813116!5m2!1sen!2sie" width="100%" height="auto" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
@@ -114,6 +109,7 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/main_script.js" type="text/javascript"></script>
+    <script src="scripts/stevensJavaScript.js" type="text/javascript"></script>
+    <script src="scripts/aelitasJavaScript.js" type="text/javascript"></script>
 </body>
 </html>

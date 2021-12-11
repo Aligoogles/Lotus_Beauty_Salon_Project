@@ -917,7 +917,7 @@ input[type="image"] {
 
 /*Team Page*/
 
-main {
+.left-right-side-margins {
   margin-left:10%;
   margin-right:10%;
 }
