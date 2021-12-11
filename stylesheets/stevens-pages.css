@@ -1,0 +1,129 @@
+/*Ready for merge*/
+/*Steven's CSS - About Page*/
+.stockvideo{
+    text-align:center;
+    margin:0 auto;
+    padding:0px;
+    width: 620px;
+    margin-bottom: 20px;
+}
+#playerContainer{
+    position:relative;
+    width: 620px;
+}
+#videoPlayer{
+    width: 620px;
+}
+#playerControls{
+    top:300px;
+    position: absolute;
+    /*background-color:#eecbff;*/
+    width:100%;
+    padding:5px;
+    box-sizing:border-box;
+}
+input[type="image"]
+{
+    float:left;
+    height:20px;
+    margin-left:50px;
+    margin-right:5px;
+    margin-top:2px;
+}
+#volImage{
+    margin-right:10px;
+    width:20px;
+}
+
+@media only screen and (max-width:480px){
+    .stockvideo{
+        width:100%;
+    }
+    #playerContainer{
+        width:100%;
+    }
+    #videoPlayer{
+        width:100%;
+    }
+    #playerControls{
+        top:150px;
+    }
+}
+@media only screen and (max-width:320px){
+    .stockvideo{
+        width:100%;
+    }
+    #playerContainer{
+        width:100%;
+    }
+    #videoPlayer{
+        width:100%;
+    }
+    #playerControls{
+        top:100px;
+    }
+}
+
+/*Steven's CSS - Team Page*/
+main {
+    margin-left:10%;
+    margin-right:10%;
+}
+.team-image{
+    width:100%;
+    height: auto;
+}
+.container-team {
+    margin-top:20px;
+}
+.saleRedirect {
+    width: auto;
+    height: 50px;
+    background-color: #eecbff;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    cursor: pointer;
+  }
+  @keyframes example {
+    from {background-color: #eecbff;}
+    to {background-color:#ffcbf6;}
+    to {background-color: #d4cbff;}
+  }
+.teamHeading{
+    text-align:center;
+}
+.paraInfoAbout{
+    font-size: large;
+    text-align: justify;
+}
+.infoAbout{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Steven's CSS - Promotion Page*/
+
+.game-content-buttons-1, .game-content-buttons-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#cream, #hairbrush, #hairdryer, #lipstick, #lotion, #pedicure, #seat, #shampoo, #straightener, #zenstones{
+    background-color: transparent;
+}
+.discountPara {
+    text-align: center;
+    font-size: 15px;
+}
+.discountHead{
+    text-align: center;
+    font-size: larger;
+}
+#endGameMessage {
+    text-align: center;
+    font-size: larger;
+}
+

@@ -1,6 +1,5 @@
-function changePage(){
-        window.location.href="https://aligoogles.github.io/Lotus_Beauty_Salon_Project/promotion.html";
-}
+/* Steven's JavaScript*/
+/*Promotion Game*/
 let playCount=0;
 let win=false;
 function checkWin(clicked_id){
@@ -81,4 +80,25 @@ function endGame(){
     }
     let end="It took "+playCount+" changes. You have "+winStatus;
     document.getElementById("endGameMessage").innerHTML=end;
+}
+
+/*Video Player JavaScript*/
+document.addEventListener("DOMContentLoaded", function() {startplayer();},false);
+var player;
+function startplayer(){
+    player=document.getElementById("videoPlayer");
+    player.controls=flase;
+}
+function playVideo(){
+    player.play();
+}
+function pauseVideo(){
+    player.pause();
+}
+function stopVideo(){
+    player.pause();
+    player.currentTime=0;
+}
+function changeVol(){
+    player.volume=document.getElementById("changeVolume").value;
 }
