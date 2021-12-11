@@ -12,7 +12,8 @@ h2 {
 p {
   text-align: justify;
   font-size: 18px;
-} /* Steven end */
+} 
+/* Steven end */
 
 /* Aelita start */
 html, body {
@@ -122,7 +123,8 @@ button:hover {
       border: none;
       transform: scale(1.2);
   }
-} /* End Ross*/
+} 
+/* End Ross*/
 
 
 /* Start Aelita */
@@ -156,7 +158,8 @@ button:hover {
     border: none;
     transform: scale(1.2);
   }
-} /* End Aelita*/
+} 
+/* End Aelita*/
 
 /*Header CSS*/
 /* Start (Aelita 21113131)*/
@@ -566,9 +569,6 @@ button:hover {
 
 /* Ross CSS (21132305) */
 /* Services page CSS */
-body{
-  background-color: #eecbff;
-}
 .heading{
   text-align:center;
   background-color: #eecbff;
@@ -647,6 +647,7 @@ h4{
   justify-content: center;
   align-items: center;
   font-size: 18px;
+  text-decoration: none;
 }
 .opener{
   display: flex;
