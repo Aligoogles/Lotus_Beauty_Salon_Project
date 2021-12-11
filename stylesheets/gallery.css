@@ -1,17 +1,10 @@
-body{
-  background-color:#eecbff;
-}
-h1{
-  text-align:center;
-  font-size: 30px;
-}
 .center{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
 }
-img{
+.column img{
     width: 300px;
     height: 300px;
     border-style: dashed;
@@ -150,7 +143,7 @@ a{
   color: black;
 }
 
-img.demo {
+.demo img{
   opacity: 0.6;
 }
 
@@ -159,8 +152,9 @@ img.demo {
   opacity: 1;
 }
 
-img.hover-shadow {
+.hover-shadow img {
   transition: 0.3s;
+  
 }
 
 .hover-shadow:hover {
@@ -168,8 +162,13 @@ img.hover-shadow {
 }
 
 @media only screen and (max-width:1020px){
-  img{
+  .column img{
     width:95%;
     height:auto;
   }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
