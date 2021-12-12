@@ -53,6 +53,7 @@ button:hover {
   color: #ffffff;
   border: none;
   transform: scale(1.2);
+
 }/* Aelita End */
 
 /* Start Aelita */
@@ -211,7 +212,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   flex: 3;
-  overflow: hidden;
 }
 
 .a-header-cont{
@@ -354,6 +354,7 @@ button:hover {
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   
 }
 .a-box h2 {
@@ -364,7 +365,6 @@ button:hover {
   width: 200px;
   height: 200px;
   border-radius: 5px;
-  
 }
 .a-box button {
   margin: 20px 40px;
@@ -377,7 +377,8 @@ button:hover {
 }
 
 #a-who-we-are img {
- width: 55%;
+ width: 50%;
+ border-radius: 5px;
 }
 
 .a-home-about {
@@ -389,7 +390,7 @@ button:hover {
   margin: 100px 90px 80px -150px;
   z-index: 99;
   justify-content: center;
-  padding: 80px 60px 20px 60px;
+  padding: 40px 60px 20px 60px;
   background-color: #c797cff1;
   text-align: center;
 }
@@ -411,8 +412,8 @@ button:hover {
 }
 
 .a-review-box img {
-  width: 150px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   margin: auto;
 }
 .a-stars {
@@ -421,6 +422,9 @@ button:hover {
 .a-stars p {
   padding: 20px 0px 0px 0px;
   align-items: center;
+}
+.a_star_color {
+  color: #c797cf;
 }
 .checked {
   color: #d8d21a;
@@ -531,29 +535,6 @@ button:hover {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 786px) {
-
-  .a-contact-box {
-    padding: 50px;
-  }
-  .a-contact-container {
-    flex-direction: column;
-  }
-  .a-contact-container .a-contact-info {
-    margin-bottom: 40px;  
-    width: 100%;
-  }
-
-  .a-contact-form {
-  width: 100%;
-  margin-top: 80px;
-  }
-  .a-map-box {
-    width: 100%;
-    padding: 1% 4% 1%;
-    margin-bottom: 10px;
-  }
-}
 /* Contact page Ends*/
 
 /* Ross CSS (21132305) */
@@ -1016,8 +997,7 @@ input[type="image"] {
     margin: 3px; 
   }
 }
-
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .a-nav li{
     font-size: 12px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1037,7 +1017,80 @@ input[type="image"] {
     float: right;
     display: block;
   }
+
+  .a-contact-box {
+    padding: 50px;
+  }
+  .a-contact-container {
+    flex-direction: column;
+  }
+  .a-contact-container .a-contact-info {
+    margin-bottom: 40px;  
+    width: 100%;
+  }
+  .a-contact-form {
+  width: 100%;
+  margin-top: 80px;
+  }
+  .a-map-box {
+    width: 100%;
+    padding: 1% 4% 1%;
+    margin-bottom: 10px;
+  }
+  .a-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .a-home-about p {
+    margin: 100px 20px 80px -150px;
+    z-index: 99;
+    justify-content: center;
+    padding: 20px 60px 20px 60px;
+    background-color: #c797cff1;
+    text-align: center;
+  }
+  #a-who-we-are img {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+   }
+   .a-box {
+     width: 100%;
+   }
+
+/* Footer meqia query starts */
+   .a-footer-logo img {
+    width: 80px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 0px;
+    transition: 0.2s ease-in-out;
+  }
   
+  .a-footer-menu a { 
+    margin:0px 5px 0px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: text-decoration-color 800ms;
+  }
+  
+  .a-icons img {
+    margin:0px 20px 0px;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .a-back-to-top {
+    margin-left:20px;
+    margin-top: 5px;
+    width: 30px;
+    height: auto; 
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 600px){

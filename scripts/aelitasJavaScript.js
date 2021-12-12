@@ -1,5 +1,27 @@
 /* Start Index page */
 
+/* logo onclick to bring back to index.html page */
+function a_backHome(){
+    window.location.href="index.html";
+}
+
+/* Our Services section Onclick img */
+/* FOR NOW ITS JUST LINKED TO SERVICE PAGE. TARGETING ID ISNT WORKING FOR NOW */
+function aHair () {
+    window.location.href="services.html"
+}
+function aMakeup () {
+    window.location.href="services.html"
+}
+function aMassage () {
+    window.location.href="services.html"
+}
+function aNails () {
+    window.location.href="services.html"
+}
+
+
+
 /* Star functionality */
 function toggleStar(number) {
     starID = "a-star-"+number;
