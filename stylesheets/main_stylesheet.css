@@ -365,6 +365,7 @@ button:hover {
   width: 200px;
   height: 200px;
   border-radius: 5px;
+
 }
 .a-box button {
   margin: 20px 40px;
@@ -412,9 +413,9 @@ button:hover {
 }
 
 .a-review-box img {
-  width: 150px;
-  height: 160px;
- margin: auto;
+  width: 120px;
+  height: 80px;
+  margin: auto;
 }
 .a-stars {
   margin: auto;
@@ -793,8 +794,7 @@ button{
 }
 
 .hover-shadow img {
-  transition: 0.3s;
-  
+  transition: 0.3s;  
 }
 
 .hover-shadow:hover {
@@ -967,56 +967,59 @@ input[type="image"] {
   font-size: larger;
 }
 
-/* Media Queries Steven Ross Aelita */
+/* Media Queries */
 @media screen and (min-width: 900px) {
+
+  /* index page starts (Aelita 21113131) */
   .a-serviceInfo{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  } /* Index page ends */
+  
+  /* Footer meqia query starts (Aelita 21113131) */ 
+  .a-footer-logo img {
+    width: 80px;
+    height: 50px;
+    margin-left: 30px;
   }
-}
-
-@media screen and (max-width: 1360px) {
-  .a-nav li{
+  .a-footer-menu a { 
+    margin:0px 5px 0px 20px;
     font-size: 15px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
   }
-
-  .a-nav li{
-    margin: 5px; 
+  .a-icons img {
+    margin:0px 20px 0px;
+    width: 20px;
+    height: 15px;
   }
+  .a-back-to-top {
+    margin-left:20px;
+    margin-top: 5px;
+    width: 30px;
+    height: auto; 
+  } /* Footer ends */
 }
 
-@media screen and (max-width: 1264px) {
-  .a-nav li{
-    font-size: 13px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  }
-  .a-nav li{
-    margin: 3px; 
-  }
-}
 @media screen and (max-width: 768px) {
+  .a-under-slider{
+    margin:auto;
+  }
   .a-nav li{
     font-size: 12px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
   }
-
   .a-logo-cont img {
     width: 70px;
     height: 50px;
     margin: auto;
   }
-
   .a-nav li{
     margin: 3px; 
   }
-
   .a-nav a.icon {
     float: right;
     display: block;
   }
-
   .a-contact-box {
     padding: 50px;
   }
@@ -1036,17 +1039,20 @@ input[type="image"] {
     padding: 1% 4% 1%;
     margin-bottom: 10px;
   }
+
+  /*index page */
+  .a-under-slider{
+    padding: 20px;
+  }
   .a-box img {
     width: 150px;
     height: 150px;
     border-radius: 5px;
   }
   .a-home-about p {
-    margin: 100px 20px 80px -150px;
+    margin: 0px -60px 0px -100px;
     z-index: 99;
-    justify-content: center;
-    padding: 20px 60px 20px 60px;
-    background-color: #c797cff1;
+    padding: 10px 40px 10px 40px;
     text-align: center;
   }
   #a-who-we-are img {
@@ -1055,56 +1061,96 @@ input[type="image"] {
     border-radius: 5px;
    }
    .a-box {
-     width: 100%;
+     width: 25%;
+     float: right;
    }
+   .a-home-about p {
+     font-size: 10px;
+    margin: auto;
+    padding: 20px;
+  }
 
-/* Footer meqia query starts */
+/* Footer meqia query starts (Aelita 21113131) */
+  
    .a-footer-logo img {
     width: 80px;
     height: 50px;
     margin-left: 30px;
-    margin-top: 0px;
-    transition: 0.2s ease-in-out;
   }
-  
   .a-footer-menu a { 
     margin:0px 5px 0px 20px;
     font-size: 15px;
-    cursor: pointer;
-    transition: text-decoration-color 800ms;
   }
-  
   .a-icons img {
-    margin:0px 20px 0px;
-    width: 20px;
-    height: auto;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+    margin: 15px;
+    width: 15px;
+    height: 15px;
   }
-  
   .a-back-to-top {
     margin-left:20px;
     margin-top: 5px;
     width: 30px;
     height: auto; 
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-  }
+  } /* Footer ends */
 }
 
 @media screen and (max-width: 600px){
+
+  /*header (Aelita 21113131) */
   .a-nav li{
     font-size: 10px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
   }
-
   .a-logo-cont img {
     width: 50px;
     height: 30px;
     margin: auto;
-  }
+  } /*  Header ends */
 
-  .a-nav li{
-    margin: 2px; 
+   /*footer (Aelita 21113131)*/
+   .a-footer-logo img {
+    width: 40px;
+    height: 30px;
+    margin: 8px 4px 10px 4px;
   }
+  .a-footer-menu a{ 
+    margin:0px;
+    font-size: 12px;
+  }
+  .a-icons img {
+    margin: 12px;
+    width: 12px;
+    height: 12px;
+  }
+  .a-back-to-top {
+    margin-left:20px;
+    width: 20px;
+    height: 20px; 
+    margin-top: -1px;
+  } /* Footer end */
+}
+
+@media screen and (max-width: 360px){
+ 
+ /*footer (Aelita 21113131)*/
+  .a-footer-logo img {
+    width: 30px;
+    height: 20px;
+    margin: 7px 2px 10px 2px;
+  }
+  .a-footer-menu a{ 
+    margin:0px;
+    font-size: 10px;
+  }
+  .a-icons img {
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+  }
+  .a-back-to-top {
+    margin-left:20px;
+    width: 18px;
+    height: 18px; 
+    margin-top: -1px;
+  } /* Footer end */
 }
