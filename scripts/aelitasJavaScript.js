@@ -1,12 +1,44 @@
-/* Start Index page */
+// Mobile menu
+const aNavMobile = () => {
+    const aBurger = document.querySelector('.a_hamburger');
+    const aNav = document.querySelector ('.a-nav');
+    const aNavLinks = document.querySelector ('.a-nav li');
 
-/* logo onclick to bring back to index.html page */
+    
+    aBurger.addEventListener('click', () => {
+
+        //Toggle Nav bar
+        aNav.classList.toggle('a-nav-active');
+
+        //Animate links
+        aNavLinks.forEach ((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            }
+            else {
+                link.style.animation = `aNavLinkFade 0.5s ease forwards $ {index / 7 + 1.5}s`;
+            }
+        });
+
+        //hambrger animation
+        aBurger.classList.toggle('toggle');
+    });
+
+
+}
+aNavMobile (); 
+// End for mobile menu
+
+
+//Start Index page 
+
+//logo onclick to bring back to index.html page 
 function a_backHome(){
     window.location.href="index.html";
 }
 
-/* Our Services section Onclick img */
-/* FOR NOW ITS JUST LINKED TO SERVICE PAGE. TARGETING ID ISNT WORKING FOR NOW */
+/* Our Services section Onclick img 
+FOR NOW ITS JUST LINKED TO SERVICE PAGE. TARGETING ID ISNT WORKING FOR NOW */
 function aHair () {
     window.location.href="services.html"
 }
@@ -112,19 +144,6 @@ function validateForm() {
     alert("Information has been validated");
     return true; 
   } /* Contact form End */
-
-
-
-/*Start of hamburger menu 
-function aHamburger() {
-    var x = document.getElementsByClassName("a-nav");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-}
-  /* End of hamburger menu */
 
 
   
