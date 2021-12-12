@@ -20,7 +20,7 @@ function formChange(){
             hideForm.style.display="none";
         }
     //To say form is submitted
-    alert(firstName+ lastName+", thank you for your details. We will be in touch via "+userEmail+ " and "+userNum+" shortly. Your treatments are "+treatment1+ treatment2+ treatment3+ treatment4);
+    alert(firstName+ lastName+", thank you for your details. We will be in touch via "+userEmail+ " and "+userNum+" shortly. Your treatments are "+treatment1+" , "+treatment2+''+treatment3+''+ treatment4);
     alert("Form submitted");
 }
 
