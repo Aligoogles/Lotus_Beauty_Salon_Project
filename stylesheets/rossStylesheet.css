@@ -61,9 +61,7 @@ body{
 button{
   background-color:#e8a2c5;
   color: black;
-  size: 18px;
-  
-  font-family: Roboto;
+  resize: inherit;
   }
 p{
   font-size: 18px;
@@ -111,7 +109,7 @@ span{
     width: 300px;
     height: 300px;
     border-style: dashed;
-    border: 1px 1px 1px 1px;
+    border-radius: 1px;;
     border-color: #c797cf;
     cursor: pointer;
 }
