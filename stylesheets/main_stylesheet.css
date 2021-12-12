@@ -616,7 +616,7 @@ button:hover {
 button{
   background-color:#e8a2c5;
   color: black;
-  size: 18px;
+  resize: inherit;
   }
 
 p{
@@ -669,7 +669,6 @@ span{
   width: 300px;
   height: 300px;
   border-style: dashed;
-  border: 1px 1px 1px 1px;
   border-color: #c797cf;
   cursor: pointer;
 }
