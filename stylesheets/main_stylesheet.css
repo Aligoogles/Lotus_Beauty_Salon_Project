@@ -977,6 +977,8 @@ input[type="image"] {
     flex-wrap: wrap;
   } /* Index page ends */
   
+} 
+  @media screen and (max-width: 899px) {
   /* Footer meqia query starts (Aelita 21113131) */ 
   .a-footer-logo img {
     width: 80px;
