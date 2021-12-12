@@ -13,8 +13,8 @@
 <body>
     <header>
         <div id="a-header">
-            <div class="a-logo-cont">
-                <img class="a-logo" src="images/Lotus_beauty.png" alt="Lotus-flower" >
+            <div class="a-logo-cont" onclick="a_backHome()">
+                <img class="a-logo" src="images/Lotus_beauty.svg" alt="Lotus-flower" >
             </div>
             <div class="a-headNav-cont">
                 <div class="a-header-cont">
@@ -28,11 +28,14 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="contact.html">Contact us</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="aHamburger()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </ul>
                 </nav>
             </div>
             <div class="a-logo-cont">
-                <img class="a-logo" src="images/Lotus_beauty.png" alt="Lotus-flower">
+                <img class="a-logo" src="images/Lotus_beauty.svg" alt="Lotus-flower" onclick="a_backHome()">
             </div>  
         </div>
     </header>
@@ -176,26 +179,32 @@
     </p>
     </main>
     <footer>
-        <div class="a-footer">
+       <div class="a-footer">
             <div class="a-footer-logo">
-                <a href="index.html"><img src="images/Lotus_beauty.png" alt="Lotus-flower" class="footer-logo"></a>
+                <a href="index.html"><img src="images/Lotus_beauty.svg" alt="Lotus-flower" class="footer-logo"></a>
             </div>
-    
+
             <div class="a-footer-menu">
                 <a href="services.html" id="a-ser-page">Services</a>
                 <a href="gallery.html" id="a-gal-page">Gallery</a>
                 <a href="contact.html" id="a-con-page">Contact</a>
             </div>
+
             <div class="a-icons">
-                <img src="images/facebook.png" alt=>
-                <img src="images/instagram.png">
-                <img src="images/twitter.png">
-                <img src="images/googleplus.png">
+                <!--Facebook icon-->
+                <img src="images/facebook.svg">
+                <!-- Instagram icon -->
+                <img src="images/instagram.svg">
+                <!--Twitter icon-->
+                <img src="images/twitter.svg">
+                <!--Google icon-->
+                <img src="images/google.svg">
             </div>
+
             <div class="a-back-to-top"  title="scroll up">
-                <img onclick="scrollToTop()" src="images/up_arrow.png" alt="up arrow">
+                <img onclick="scrollToTop()" src="images/up_arrow.svg" alt="up arrow">
             </div>
-            </div>
+        </div>
     </footer>
     <script src="scripts/aelitasJavaScript.js"></script>
     <script src="scripts/rossJavaScript.js"></script>

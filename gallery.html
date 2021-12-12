@@ -12,32 +12,32 @@
     <link href="stylesheets/main_stylesheet.css" type="text/css" rel="stylesheet">
 <body>
     <header>
-    <div id="a-header" style="margin: -20px;">
-      <div class="a-logo-cont">
-        <img class="a-logo" src="images/Lotus_beauty.png" alt="Lotus-flower" >
+        <div id="a-header">
+          <div class="a-logo-cont" onclick="a_backHome()">
+              <img class="a-logo" src="images/Lotus_beauty.svg" alt="Lotus-flower" >
+          </div>
+          <div class="a-headNav-cont">
+              <div class="a-header-cont">
+                  <h1>Lotus Beauty Salon</h1>
+              </div>                   
+              <nav class="a-nav-cont">
+                  <ul class="a-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li> <a href="services.html">Services</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="team.html">Team</a></li>
+                      <li><a href="contact.html">Contact us</a></li>
+                      <a href="javascript:void(0);" class="icon" onclick="aHamburger()">
+                          <i class="fa fa-bars"></i>
+                      </a>
+                  </ul>
+              </nav>
+          </div>
+          <div class="a-logo-cont">
+              <img class="a-logo" src="images/Lotus_beauty.svg" alt="Lotus-flower" onclick="a_backHome()">
+          </div>  
       </div>
-    <div class="a-headNav-cont">
-        <div class="a-header-cont">
-            <h1 style="padding-bottom: 10px;;">Lotus Beauty Salon</h1>
-        </div>                   
-        <nav class="a-nav-cont">
-            <ul class="a-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li> <a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="aHamburger()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </ul>
-        </nav>
-    </div>
-    <div class="a-logo-cont">
-        <img class="a-logo" src="images/Lotus_beauty.png" alt="Lotus-flower">
-    </div>  
-</div>
   </header>
   <main>
       <h1 style="text-align: center; margin-top: 50px;">Gallery</h1>
@@ -250,25 +250,32 @@
     <a href="booking.html" class="a-ross"><button onclick="book()" style="display: flex; justify-content: center; align-items: center;  margin-top: 30px; margin-bottom: 30px;">Book An Appointment</button></a>
   </main>
   <footer>
-    <div class="a-footer">
-      <div class="a-footer-logo">
-          <a href="index.html"><img src="images/Lotus_beauty.png" alt="Lotus-flower" class="footer-logo"></a>
-      </div>
-      <div class="a-footer-menu">
-          <a href="services.html" id="a-ser-page">Services</a>
-          <a href="gallery.html" id="a-gal-page">Gallery</a>
-          <a href="contact.html" id="a-con-page">Contact</a>
-      </div>
-      <div class="a-icons">
-          <img src="images/facebook.png">
-          <img src="images/instagram.png">
-          <img src="images/twitter.png">
-          <img src="images/googleplus.png">
-      </div>
-      <div class="a-back-to-top"  title="scroll up">
-          <img onclick="scrollToTop()" src="images/up_arrow.png" alt="up arrow">
-      </div>
-      </div>
+      <div class="a-footer">
+        <div class="a-footer-logo">
+            <a href="index.html"><img src="images/Lotus_beauty.svg" alt="Lotus-flower" class="footer-logo"></a>
+        </div>
+
+        <div class="a-footer-menu">
+            <a href="services.html" id="a-ser-page">Services</a>
+            <a href="gallery.html" id="a-gal-page">Gallery</a>
+            <a href="contact.html" id="a-con-page">Contact</a>
+        </div>
+
+        <div class="a-icons">
+            <!--Facebook icon-->
+            <img src="images/facebook.svg">
+            <!-- Instagram icon -->
+            <img src="images/instagram.svg">
+            <!--Twitter icon-->
+            <img src="images/twitter.svg">
+            <!--Google icon-->
+            <img src="images/google.svg">
+        </div>
+
+        <div class="a-back-to-top"  title="scroll up">
+            <img onclick="scrollToTop()" src="images/up_arrow.svg" alt="up arrow">
+        </div>
+    </div>
         </footer>
         <script src="scripts/aelitasJavaScript.js"></script>
         <script src="scripts/rossJavaScript.js"></script>
