@@ -286,17 +286,6 @@ button:hover {
   transform: translateX(0%);
 }
 
-@keyframes aNavLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX (0px);
-  }
-}
-
 .toggle .a_line1 {
   transform: rotate (-45deg) translate(-5px,6px);
 }
@@ -1063,16 +1052,13 @@ input[type="image"] {
   .a-contact-box {
     padding: 50px;
   }
-  .a-contact-container {
-    flex-direction: column;
-  }
   .a-contact-container .a-contact-info {
     margin-bottom: 40px;  
     width: 100%;
   }
   .a-contact-form {
   width: 100%;
-  margin-top: 80px;
+  margin-left: 60px;
   }
   .a-map-box {
     width: 100%;
@@ -1092,7 +1078,6 @@ input[type="image"] {
   }
   .a-home-about p {
     margin: 0px -60px 0px -100px;
-    z-index: 99;
     padding: 10px 40px 10px 40px;
     text-align: center;
   }
@@ -1102,14 +1087,26 @@ input[type="image"] {
     border-radius: 5px;
    }
    .a-box {
-     width: 25%;
+     width: 50%;
      float: right;
    }
    .a-home-about p {
      font-size: 10px;
     margin: auto;
     padding: 20px;
-  }/* End index page media query (Aelita 21113131)*/
+  }
+  .a-cust-review p{
+    font-size: 12px;
+  }
+  .a-review-box {
+    flex-basis: 27%;
+  }
+  .a-stars p {
+    padding: 20px 0px 0px 0px;
+    align-items: center;
+  }
+  
+  /* End index page media query (Aelita 21113131)*/
 
 /* Footer meqia query starts (Aelita 21113131) */
    .a-footer-logo img {
