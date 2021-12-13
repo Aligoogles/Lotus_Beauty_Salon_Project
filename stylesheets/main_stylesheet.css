@@ -268,7 +268,6 @@ button:hover {
     align-items: center;
     width: 40%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
   }
   .a-nav li {
     opacity: 0;
@@ -286,15 +285,6 @@ button:hover {
   transform: translateX(0%);
 }
 
-.toggle .a_line1 {
-  transform: rotate (-45deg) translate(-5px,6px);
-}
-.toggle .a_line2 {
-  opacity: 0;
-}
-.toggle .a_line3 {
-  transform: rotate (45deg) translate(-5px,6px);
-}
 /* Hamburger menu end */
 /* Header Ends */
 

@@ -19,9 +19,6 @@ const aNavMobile = () => {
                 link.style.animation = `aNavLinkFade 0.5s ease forwards $ {index / 7 + 1.5}s`;
             }
         });
-
-        //hambrger animation
-        aBurger.classList.toggle('toggle');
     });
 
 
