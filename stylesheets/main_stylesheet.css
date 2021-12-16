@@ -219,7 +219,8 @@ button:hover {
   justify-content: space-between;
   margin: -5px;
 }
-.a-nav li{
+.a-nav li a{
+  display: block;
   flex-basis: 16%;
   padding: 10px;
   font-size: 15px;
@@ -229,7 +230,7 @@ button:hover {
   margin: 10px; 
   transition: 0.2s ease-in-out;
 }
-.a-nav li:hover {
+.a-nav li a:hover {
   transform: scale(1.1);
 }
 .a-nav a {
