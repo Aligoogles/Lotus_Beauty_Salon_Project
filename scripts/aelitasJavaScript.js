@@ -20,8 +20,6 @@ const aNavMobile = () => {
             }
         });
     });
-
-
 }
 aNavMobile (); 
 // End for mobile menu
