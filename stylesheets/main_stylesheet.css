@@ -584,9 +584,9 @@ button:hover {
 
 .a-contact-form {
   width: 60%;
-  padding: 40px;
+  padding: 10px;
   background: #c797cf;
-  margin-top: -80px;
+
 }
 
 .a-contact-form .a-input-box {
@@ -1119,7 +1119,7 @@ input[type="image"] {
   }
   .a-contact-form {
   width: 100%;
-  margin-left: 60px;
+ 
   }
   .a-map-box {
     width: 100%;
@@ -1220,6 +1220,20 @@ input[type="image"] {
 
   /* Start index page media query (Aelita 21113131)*/
   /*Start of services*/
+
+  .a-main-contact-area {
+    padding: 50px 20px;
+  }
+
+  .a-main-contact-form {
+    margin-top: 0px;
+    margin-left: 0px;
+  } 
+
+  h2{
+    margin: 0px;
+  }
+
   .a-box img {
     width: 250px;
     height: 250px;
