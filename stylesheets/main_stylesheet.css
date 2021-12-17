@@ -232,12 +232,12 @@ button:hover {
 .a-nav li a{
   display: block;
   flex-basis: 16%;
-  padding: 10px;
+  padding: 10px 40px 10px 40px;
   font-size: 15px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background-color: #000000;
   border-radius: 1px;
-  margin: 10px; 
+  margin: 7px; 
   transition: 0.2s ease-in-out;
 }
 .a-nav li a:hover {
@@ -1075,6 +1075,7 @@ input[type="image"] {
     justify-content: space-between;
     flex-wrap: wrap;
   } /* Index page ends */
+
   
 } 
   @media screen and (max-width: 1024px) {
@@ -1107,7 +1108,6 @@ input[type="image"] {
 
 
   /* Promotion Ends - Steven*/
-
 
   /* start Contact page media query (Aelita 21113131) */
   .a-contact-box {
@@ -1259,6 +1259,19 @@ input[type="image"] {
    display: none;
   }
   /* End index page media query (Aelita 21113131)*/
+
+  /* start Contact page media query (Aelita 21113131) */
+
+    /*Contact page*/
+    .a-contact-container {
+      flex-wrap: wrap;
+    }
+  .a-map-box {
+    width: 100%;
+    height: 50%;
+    padding: 1% 4% 1%;
+    margin-bottom: 10px;
+  }/* End Contact page media query (Aelita 21113131) */
 
  /*footer (Aelita 21113131)*/
   .a-footer-logo img {
