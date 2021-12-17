@@ -734,7 +734,7 @@ span{
 }
 
 .column img{
-  width: 300px;
+  width: 300px;;
   height: 300px;
   border-style: dashed;
   border-color: #c797cf;
@@ -754,6 +754,7 @@ button{
 
 .row{
   margin-left: 20px;
+  
 }
 
 .row:after {
@@ -766,6 +767,10 @@ button{
 .column {
   float: left;
   width: 25%;
+}
+
+.col2{
+  margin-left: 2%;
 }
 
 /* The Modal (background) */
@@ -783,7 +788,7 @@ button{
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content{
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -791,14 +796,15 @@ button{
   width: 90%;
   max-width: 1200px;
 }
+
 /* Modal Content 2 */
 .modal-content-2 {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 300px;
-  max-width: 300px;
+  width: 600px;
+  height: 600px;
 }
 
 /* The Close Button */
@@ -891,6 +897,13 @@ button{
   .column img{
   width:95%;
   height:auto;
+  }
+}
+
+@media only screen and (max-width: 1020px){
+  .numbertext img{
+    width: 95%;
+    height: auto;
   }
 }
 /* Gallery page ends */
