@@ -114,12 +114,8 @@ function validateForm() {
             return false;
         }
     }
-    if(number.length < 10){
-        alert("Not enough digits in phone number");
-        return false;
-    }
-    else if(number.length > 12){
-        alert("Too many digits in phone number");
+    if(number.length < 10 || number.length > 12){
+        alert("Number should be between 10 & 12 digits long");
         return false;
     }
 
