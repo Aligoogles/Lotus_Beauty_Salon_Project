@@ -1,27 +1,15 @@
 // Mobile menu
-const aNavMobile = () => {
-    const aBurger = document.querySelector('.a_hamburger');
-    const aNav = document.querySelector ('.a-nav');
-    const aNavLinks = document.querySelector ('.a-nav li');
+const aBurger = document.querySelector(".a_hamburger");
+const aNav = document.querySelector (".a-nav");
 
-    
-    aBurger.addEventListener('click', () => {
+aBurger.addEventListener("click", aNavMobile);
 
-        //Toggle Nav bar
-        aNav.classList.toggle('a-nav-active');
 
-        //Animate links
-        aNavLinks.forEach ((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            }
-            else {
-                link.style.animation = `aNavLinkFade 0.5s ease forwards $ {index / 7 + 1.5}s`;
-            }
-        });
-    });
+function aNavMobile() {
+
+    aBurger.classList.toggle("active");
+    aNav.classList.toggle("active");
 }
-aNavMobile (); 
 // End for mobile menu
 
 

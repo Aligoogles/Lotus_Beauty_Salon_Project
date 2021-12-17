@@ -1,5 +1,5 @@
 /*Typography - The main style of the whole site*/
-/* Steven start */
+/* Steven start  default settings for the website*/
 h1, h2, h3, p {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -16,7 +16,7 @@ p {
 } 
 /* Steven end */
 
-/* Aelita start */
+/* Aelita start default settings for the website */
 html, body {
   width: auto!important; 
   overflow-x: hidden!important;
@@ -32,12 +32,13 @@ body {
   background-color: #eecbff;
 }
 
+/*Targeting all of the a tags on the website*/
 a {
   text-decoration: none;
   color: #000000;
   cursor: pointer;
 }
-
+/* Buttons on the website*/
 button {
   background: #c797cf;
   color: #ffffff;
@@ -56,7 +57,7 @@ button:hover {
 
 }/* Aelita End */
 
-/* Start Aelita */
+/* Start Aelita default settings for the website */
 @media screen and (max-width: 1025px) {
   h1, h2, h3, p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -95,7 +96,7 @@ button:hover {
   }
 } /* End Aelita*/
 
-/* Start Ross */
+/* Start Ross default settings for the website*/
 @media screen and (max-width: 786px) {
   h1, h2, h3, p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -112,7 +113,7 @@ button:hover {
   button {
     background: #c797cf;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     border: none;
     padding: 5px 20px;
@@ -129,7 +130,7 @@ button:hover {
 /* End Ross*/
 
 
-/* Start Aelita */
+/* Start Aelita default settings for the website*/
 @media screen and (max-width: 480px){
   h1, h2, h3, p{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -175,11 +176,19 @@ button:hover {
   background-color: #c797cf;
   padding: 30px 0px 20px 0px;
 }
+/*Left side logo in the header*/
 .a-logo {
   width: 100px;
   height: 70px;
   margin: auto;
 }
+/*Right side logo in the header*/
+.a-logo-number{
+  width: 100px;
+  height: 70px;
+  margin: auto;
+}
+/*Left side logo image in the header*/
 .a-logo img {
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -200,6 +209,7 @@ button:hover {
 .a-logo-cont img:hover {
   transform: scale(1.1,1.1);
 }
+/*Start of the nav bar*/
 .a-headNav-cont{
   display: flex;
   flex-direction: column;
@@ -217,7 +227,7 @@ button:hover {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  margin: -5px;
+
 }
 .a-nav li a{
   display: block;
@@ -242,13 +252,16 @@ button:hover {
   display: none;
   cursor: pointer;
 }
-.a_hamburger div {
+.a_line {
+  display: block;
   width: 25px;
   height: 5px;
   background-color: #000000;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
+  margin: 5px auto;;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}/*End of hamburger menu*/
+/*End of nav bar*/
 
 
 
@@ -257,7 +270,7 @@ button:hover {
     overflow-x: hidden;
   }
   .a-nav  {
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 50vh;
     top: 16vh;
@@ -267,24 +280,62 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    transform: translateX(100%);
+    width: 100%;
+    transition: 0.3s;
   }
   .a-nav li {
-    opacity: 0;
+    cursor: pointer;
+  }
+  .a-nav li a {
+    background-color: transparent;
+    font-size: 15px;
+    margin:0%;
+  }
+  .a-nav-cont .a-nav ul {
+    padding: 0%;
   }
   .a_hamburger {
     display: block;
     float: right;
-    margin-top: -30px;
+    margin-top: -65px;
+    z-index: 99;
+    padding-bottom: 35px;
   }
-  .a-logo-cont .number img {
+  .a_hamburger div{
+    margin-left: 230px;
+    display:flex;
+    flex-direction: column;
+  }
+  .a-logo-number {
     display: none;
   }
+  .a-logo-cont img {
+    width: 85px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+  .a-header-cont  {
+    margin: 0% 10% 8% 10%;
+  }
+  .a-header-cont h1 {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .a-nav .active {
+    left: 0;
+  }
+  .a_hamburger.active .a_line:nth-child(2) {
+    opacity: 0;
+  }
+  .a_hamburger.active .a_line:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  .a_hamburger.active .a_line:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
 }
-.nav-active {
-  transform: translateX(0%);
-}
+
 
 /* Hamburger menu end */
 /* Header Ends */
@@ -1013,7 +1064,7 @@ input[type="image"] {
   } /* Index page ends */
   
 } 
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 1024px) {
   /* Footer meqia query starts (Aelita 21113131) */ 
   .a-footer-logo img {
     width: 80px;
@@ -1038,6 +1089,12 @@ input[type="image"] {
 }
 
 @media screen and (max-width: 768px) {
+
+  /*Promotion Start - steven*/
+
+
+  /* Promotion Ends - Steven*/
+
 
   /* start Contact page media query (Aelita 21113131) */
   .a-contact-box {
@@ -1146,8 +1203,50 @@ input[type="image"] {
   } /* Footer end */
 }
 
-@media screen and (max-width: 360px){
- 
+@media screen and (max-width: 380px){
+
+  /* Start index page media query (Aelita 21113131)*/
+  /*Start of services*/
+  .a-box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .a-box {
+    width: 100%;
+    float: right;
+   }
+   .a-box button {
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+  }
+   /*End of services*/
+
+  /*About us on index page */
+  .saleRedirect {
+    display: none;
+  }
+  #a-who-we-are img {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+   }
+   #a-who-we-are h1 {
+    font-size: 18px;
+    margin-top: 60px;
+   }
+   .a-home-about p {
+    font-size: 13px;
+    margin-top: 200px;
+    margin-left: -300px;
+    margin-right: 30px;
+  }
+  /*Start of review and stars*/
+  #a-testimonials {
+   display: none;
+  }
+  /* End index page media query (Aelita 21113131)*/
+
  /*footer (Aelita 21113131)*/
   .a-footer-logo img {
     width: 30px;
@@ -1157,6 +1256,7 @@ input[type="image"] {
   .a-footer-menu a{ 
     margin:0px;
     font-size: 10px;
+    padding: 5px;
   }
   .a-icons img {
     margin: 10px;
@@ -1167,6 +1267,5 @@ input[type="image"] {
     margin-left:20px;
     width: 18px;
     height: 18px; 
-    margin-top: -1px;
   } /* Footer end */
 }
