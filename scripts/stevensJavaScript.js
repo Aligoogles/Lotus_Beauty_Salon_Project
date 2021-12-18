@@ -2,6 +2,7 @@
 /*Promotion Game*/
 /*Getting results from user and computer*/
 let playCount=0;
+let winCount=1;
 let win=false;
 function checkWin(clicked_id){
     var userChoice=clicked_id;
@@ -49,34 +50,87 @@ function pick(){
 /*Different amount of clicks needed to give different values of discount*/
 function compare(userChoice,computerPick){ 
     var result="You lose";
-    if(userChoice==computerPick && playCount<=5){
-        result="You won! here is the code (B-e-a-uty25) for 25% off";
-        win=true;
+    /*Level 1*/
+    if(userChoice==computerPick && playCount<=4 && winCount==1){
+            result="Congrats, you have won 5% off. Next level is up to 10% off";
+            win=true;
+            winCount++;
+        }
+    else if(userChoice!=computerPick && playCount<=4 && winCount==1){
+            result="Wrong answer! Try again";
+        }
+    else if(userChoice!=computerPick && playCount>4 && winCount==1){
+        result="Wrong answer. You have run out of options. Resetting the game";
+        winCount=1;
+        playCount=0;
     }
-    else if(userChoice==computerPick && playCount<=10){
-        result="You won! here is the code (B-e-a-uty20) for 20% off";
+    /*Level 2*/
+    else if(userChoice==computerPick && playCount>4 && playCount<=9 && winCount==2){
+        result="Congrats, you have won 10% off. Next level is up to 15% off";
         win=true;
+        winCount++;
     }
-    else if(userChoice==computerPick && playCount<=15){
-        result="You won! here is the code (B-e-a-uty15) for 15% off";
-        win=true;
+    else if(userChoice!=computerPick && playCount>4 && playCount<=9 && winCount==2){
+        result="Wrong answer! Try again";
     }
-    else if(userChoice==computerPick && playCount<=20){
-        result="You won! here is the code (B-e-a-uty10) for 10% off";
-        win=true;
+        else if(userChoice!=computerPick && playCount>4 && playCount>9 && winCount==2){
+        result="Wrong answer. You have run out of options. Resetting the game";
+        winCount=1;
+        playCount=0;
     }
-    else if(userChoice==computerPick && playCount >=20){
-        result="You won! here is the code (B-e-a-uty5) for 5% off";
+    /*Level 3*/
+    else if(userChoice==computerPick && playCount>9 && playCount<=14 && winCount==3){
+        result="Congrats, you have won 15% off. Next level is up to 20% off";
         win=true;
+        winCount++;
+    }
+    else if(userChoice!=computerPick && playCount>9 && playCount<=14 && winCount==3){
+        result="Wrong answer! Try again";
+    }
+        else if(userChoice!=computerPick && playCount>9 && playCount>14 && winCount==3){
+        result="Wrong answer. You have run out of options. Resetting the game";
+        winCount=1;
+        playCount=0;
+    }
+    /*Level 4*/
+    else if(userChoice==computerPick && playCount>14 && playCount<=19 && winCount==4){
+        result="Congrats, you have won 20% off. Next level is up to 25% off";
+        win=true;
+        winCount++;
+    }
+    else if(userChoice!=computerPick && playCount>14 && playCount<=19 && winCount==4){
+        result="Wrong answer! Try again";
+    }
+        else if(userChoice!=computerPick && playCount>14 && playCount>19 && winCount==4){
+        result="Wrong answer. You have run out of options. Resetting the game";
+        winCount=1;
+        playCount=0;
+    }
+    /*Level 5*/
+    else if(userChoice==computerPick && playCount>19 && playCount<=24 && winCount==5){
+        result="Congrats, you have won 10% off. Next level is up to 15% off";
+        win=true;
+        winCount++;
+    }
+    else if(userChoice!=computerPick && playCount>19 && playCount<=24 && winCount==5){
+        result="Wrong answer! Try again";
+    }
+        else if(userChoice!=computerPick && playCount>19 && playCount>24 && winCount==5){
+        result="Wrong answer. You have run out of options. Resetting the game";
+        winCount=1;
+        playCount=0;
     }
     else{
-        result="Sorry, you did not win. Try again";;
-    }
+        result="Nope, wrong answer, try again";
+        }
     playCount++;
-    if(playCount==5 || win==true){
-        endGame();
-    }
+    clickAndWin();
+    endGame();
     return result;
+}
+function clickAndWin(){
+    let messClickAndWin="Number of Clicks: "+playCount+"</br> Level Number: "+winCount;
+    document.getElementById("clickResults").innerHTML=messClickAndWin;
 }
 /*Returning results to the page*/
 function endGame(){
@@ -84,7 +138,26 @@ function endGame(){
     if(win==true){
         winStatus="won";
     }
-    let endProGame="It took "+playCount+" changes but you have "+winStatus;
+    let codeVoc="";
+    if(winCount==2){
+        codeVoc="Here is 5% off! Code:Beauty5%per";
+    }
+    else if(winCount==3){
+        codeVoc="Here is 10% off! Code:BEauty10%per";
+    }
+    else if(winCount==4){
+        codeVoc="Here is 15% off! Code:BEAuty15%per";
+    }
+    else if(winCount==5){
+        codeVoc="Here is 20% off! Code:BEAUty20%per";
+    }
+    else if(winCount==6){
+        codeVoc="Here is 25% off! Code:BEAUTy25%per";
+    }
+    else{
+        codeVoc="";
+    }
+    let endProGame="It took "+playCount+" changes but you have "+winStatus+". </br>"+codeVoc;
     document.getElementById("endGameMessage").innerHTML=endProGame;
 }
 

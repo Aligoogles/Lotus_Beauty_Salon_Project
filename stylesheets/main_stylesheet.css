@@ -676,6 +676,47 @@ input[type="image"] {
 .container-team {
   margin-top:20px;
 }
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+}
+/* Foward button to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+/*Hover on buttons background */
+.Back:hover, .forward:hover {
+  background-color:#eecbff;
+}
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: purple;
+  border-radius: 50%;
+  display: inline-block;
+}
+.enable, .dots:hover {
+  background-color: #FFFFFF;
+}
 /*Promotion link to webpage*/
 .saleRedirect {
   width: auto;
