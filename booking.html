@@ -46,54 +46,32 @@
             <div class="conatiner-1">
                 <form class="formBooking" id="hide" action="#" onsubmit="formChange(); return false" style="display: flex; justify-content: center; align-items: center;">
                     <fieldset>
-                        <label for="fname">*First Name:</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="lname">*Last Name:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
-                        <label for="email">*Email address:</label><br>
-                        <input type ="email" id="email" name="email"><br>
-                        <label for="pnum">*Phone Number:</label><br>
-                        <input type="text" id="pnum" name="pnum"><br>
-                        <select name="treatmentOne" id="treatment1">
-                            <optgroup label="Treatments">
-                            <option value="hair">Hair</option>
-                            <option value="makeup">Make-up</option>
-                            <option value="nails">Nails</option>
-                            <option value="massage">Massage/Spa</option>
-                            <option value="" selected>None</option>
-                            </optgroup>
-                        </select><br><br>
-                        <select name="treatmentTwo" id="treatment2" >
-                            <optgroup label="Treatments">
-                            <option value="hair">Hair</option>
-                            <option value="makeup">Make-up</option>
-                            <option value="nails">Nails</option>
-                            <option value="massage">Massage/Spa</option>
-                            <option value="" selected>None</option>
-                            </optgroup>
-                        </select><br><br>
-                        <select name="treatmentThree" id="treatment3">
-                            <optgroup label="Treatments">
-                            <option value="hair">Hair</option>
-                            <option value="makeup">Make-up</option>
-                            <option value="nails">Nails</option>
-                            <option value="massage">Massage/Spa</option>
-                            <option value="" selected>None</option>
-                            </optgroup>
-                        </select><br><br>
-                        <select name="treatmentFour" id="treatment4">
-                            <optgroup label="Treatments">
-                            <option value="hair">Hair</option>
-                            <option value="makeup">Make-up</option>
-                            <option value="nails">Nails</option>
-                            <option value="massage">Massage/Spa</option>
-                            <option value="" selected>None</option>
-                            </optgroup>
-                        </select><br>
-                        <br>
-                        <button onclick="submit()" class="submit">Continue</button>
+                        <div class="r-form">
+                            <form id="r-form" onsubmit="return validateForm()">
+                                <h2>PLease fill out the form below to make an appointment.</h2>
+                                
+                                <div class="r-input-box">
+                                    <input type="text" id="fullname" name="fullname" required="required" placeholder="Full Name">
+                                </div>
+                            
+                                <div class="r-input-box">
+                                    <input type="text" id="email" name="email" required="required" placeholder="Email">
+                                </div>
+        
+                                <div class="r-input-box">
+                                    <input type="tel" id="pnum" name="pnum" required="required" placeholder="Phone no">
+                                </div>
+                    
+                                <div class="r-input-box">
+                                    <textarea id="message" name="message" required="required" placeholder="Let us know the services you would like to recieve by typing them in here:"rows="5"></textarea>
+                                </div>
+                                
+                                <div class="r-input-box">
+                                    <input type="submit" value="Submit">
+                                    <p id="r-success"></p>
+                                </div>
+                            </form>
                     </fieldset>
-                </form>
         </div>
         </main>
         <footer>

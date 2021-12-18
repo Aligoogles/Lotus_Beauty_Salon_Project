@@ -1,28 +1,88 @@
-//Javascript for the Form
+//To get to booking page
+function bookApp(){
+  alert("You will now be directed to the booking form. Thank you.")
+  window.location.href="booking.html"
+}
 
+//Javascript for the Form
 function formChange(){
     //Assigning input data into vars
-    var firstName=document.getElementById("fname").value;
-    var lastName=document.getElementById("lname").value;
-    var userEmail=document.getElementById("email").value;
-    var userNum=document.getElementById("pnum").value;
-    var treatment1=document.getElementById("treatment1").value;
-    var treatment2=document.getElementById("treatment2").value;
-    var treatment3=document.getElementById("treatment3").value;
-    var treatment4=document.getElementById("treatment4").value;
+    let name = document.forms["r-form"]["name"].value;
+    let email = document.forms["r-form"]["email"].value;
+    let number = document.forms["r-form"]["number"].value;
+
+    //alert messages
+
+    //first name
+    if(name.indexOf(" ")!= -1){
+      name=name.split(" ");
+      if(!name[1].length>=1){
+        alert("First name must be filled in.");
+        return false;
+      }
+    }
+    else{
+      alert("Please Enter more than one word. Thank you.");
+      return false;
+    }
+
+
+    //email
+    if(email.indexOf("@") != -1){
+      email= email.split("@");
+      if(email[1].indexOf(".") != -1){
+          email = email[1].split(".");
+          if(!email[1].length > 0){
+              alert("Email must have an extension");
+              return false;
+          }
+      }
+    else{
+          alert("Email must contain a period");
+          return false;
+      }
+    }
+    else{
+      alert("Email must contain @ symbol");
+      return false;
+    }
     
-    //To hide the form. 
-    var hideForm=document.getElementById("hide");
-        if (hideForm.style.display ==="none"){
-            hideForm.style.display="block";
-        }
-        else {
-            hideForm.style.display="none";
-        }
-    //To say form is submitted
-    alert(firstName+ lastName+", thank you for your details. We will be in touch via "+userEmail+ " and "+userNum+" shortly. Your treatments are "+treatment1+" , "+treatment2+''+treatment3+''+ treatment4);
-    alert("Form submitted");
+
+    //phone number
+    for( let i = 0; i < number.length; i++){
+      if(isNaN(number.charAt(i)) && !(number.charAt(i) === " ") ){
+          alert("Phone number must contain only digits");
+          return false;
+      }
+  }
+  if(number.length < 10){
+      alert("Not enough digits in phone number");
+      return false;
+  }
+  else if(number.length > 12){
+      alert("Too many digits in phone number");
+      return false;
+  }
+
+
+  alert("Thank you "+name+". We will get in touch via "+email+ number+" to organise a time and date for your appointment.");
+    return true; 
+
+ 
+//To say form is submitted
+//alert(firstName+ lastName+", thank you for your details. We will be in touch via "+userEmail+ " and "+userNum+" shortly. Your treatments are "+treatment1+" , "+treatment2+''+treatment3+''+ treatment4);
+//alert("Form submitted");
 }
+//To hide the form. 
+//var hideForm=document.getElementById("hide");
+//if (hideForm.style.display ==="none"){
+   // hideForm.style.display="block";
+//}
+//else {
+    //hideForm.style.display="none";
+//}
+   
+
 
 //Gallery JavaScript for the LightBox Modal
 

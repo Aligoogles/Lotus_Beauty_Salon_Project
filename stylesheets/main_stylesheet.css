@@ -277,7 +277,7 @@ button:hover {
     padding-right: 60px;
     background-color: #c797cf;
     z-index: 99;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -741,12 +741,6 @@ span{
   cursor: pointer;
 }
 
-button{
-  background-color:#e8a2c5;
-  color: black;
-  font-size: 18px;
-  cursor: pointer;
-}
 
 .row > .column {
   padding: 0 8px;
@@ -755,6 +749,10 @@ button{
 .row{
   margin-left: 20px;
   
+}
+button{
+  display: flex;
+  justify-content: center;
 }
 
 .row:after {
@@ -784,7 +782,7 @@ button{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: #c797cf;
 }
 
 /* Modal Content */
@@ -803,8 +801,8 @@ button{
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
 }
 
 /* The Close Button */
@@ -909,12 +907,38 @@ button{
 /* Gallery page ends */
 
 /*Booking CSS */
-h2{
-  margin: 50px;
+.r-form {
+  width: 100%;
+  padding: 40px;
+  background: #c797cf;
+  margin: 80px;
 }
 
-.submit{
-  margin: 40px;
+.r-form .r-input-box {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.r-form .r-input-box input,
+.r-form .r-input-box textarea  {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  margin: 10px 0px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.r-form .r-input-box input[type="submit"] {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
 }
 /* Booking page ends */
 
@@ -1217,6 +1241,8 @@ input[type="image"] {
 }
 
 @media screen and (max-width: 380px){
+  
+  }
 
   /* Start index page media query (Aelita 21113131)*/
   /*Start of services*/
