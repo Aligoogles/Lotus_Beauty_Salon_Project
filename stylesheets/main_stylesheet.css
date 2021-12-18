@@ -1,37 +1,19 @@
 /*Typography - The main style of the whole site*/
-/* Steven start  default settings for the website*/
-h1, h2, h3, p {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-h1 {
-  font-size: 30px;
-  font-weight: normal;
-}
-h2 {
-  font-size: 25px;
-}
-p {
-  text-align: justify;
-  font-size: 18px;
-} 
-/* Steven end */
 
 /* Aelita start default settings for the website */
 html, body {
   width: auto!important; 
   overflow-x: hidden!important;
 }
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Setting the website background to a colour*/
 body {
   background-color: #eecbff;
 }
-
 /*Targeting all of the a tags on the website*/
 a {
   text-decoration: none;
@@ -40,7 +22,7 @@ a {
 }
 /* Buttons on the website*/
 button {
-  background: #c797cf;
+  background-color:#e8a2c5;
   color: #ffffff;
   font-size: 18px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -54,115 +36,27 @@ button:hover {
   color: #ffffff;
   border: none;
   transform: scale(1.2);
-
 }/* Aelita End */
 
-/* Start Aelita default settings for the website */
-@media screen and (max-width: 1025px) {
-  h1, h2, h3, p {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  }
-
-  h1{
-    font-size: 28px;
-  }
-  h2 {
-    font-size: 22px;
-   
-  }
-  p {
-    font-size: 20px;
-   
-  }
-  button {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 18px;
-  }
-  button {
-    background: #c797cf;
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 5px 20px;
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
-  }
-  button:hover {
-    background: #c797cf;
-    color: #ffffff;
-    border: none;
-    transform: scale(1.2);
-  }
-} /* End Aelita*/
-
-/* Start Ross default settings for the website*/
-@media screen and (max-width: 786px) {
-  h1, h2, h3, p {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  }
-  h1{
-    font-size: 25px;  
-  }
-  h2 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 15px;
-  }
-  button {
-    background: #c797cf;
-    color: #ffffff;
-    font-size: 12px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 5px 20px;
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
-  }
-  button:hover {
-    background: #c797cf;
-    color: #ffffff;
-    border: none;
-    transform: scale(1.2);
-  }
+/* Ross start  default settings for the website*/
+h1, h2, h3, p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 22px;
+}
+p {
+  text-align: justify;
+  font-size: 18px;
 } 
-/* End Ross*/
-
-
-/* Start Aelita default settings for the website*/
-@media screen and (max-width: 480px){
-  h1, h2, h3, p{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  }
-  h1{
-    font-size: 20px;
-  }
-  h2{
-    font-size: 15px;
-  }
-  p {
-    text-align: justify;
-    font-size: 12px;
-  }
-  button {
-    background: #c797cf;
-    color: #ffffff;
-    font-size: 12px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 5px 20px;
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
-  }
-  button:hover {
-    background: #c797cf;
-    color: #ffffff;
-    border: none;
-    transform: scale(1.2);
-  }
-} 
-/* End Aelita*/
+/* Ross end */
 
 /*Header CSS*/
 /* Start (Aelita 21113131)*/
@@ -227,17 +121,16 @@ button:hover {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-
 }
 .a-nav li a{
   display: block;
   flex-basis: 16%;
-  padding: 10px 40px 10px 40px;
+  padding: 7px 35px 7px 35px;
   font-size: 15px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background-color: #000000;
   border-radius: 1px;
-  margin: 7px; 
+  margin: 5px; 
   transition: 0.2s ease-in-out;
 }
 .a-nav li a:hover {
@@ -245,7 +138,6 @@ button:hover {
 }
 .a-nav a {
   color: #ffffff;
-  margin: 15px 5px 15px 15px;
 }
 /* hamburger menu start */
 .a_hamburger {
@@ -262,13 +154,721 @@ button:hover {
   transition: all 0.3s ease-in-out;
 }/*End of hamburger menu*/
 /*End of nav bar*/
+/* Header Ends */
 
 
+/*Footer CSS*/
+/* Start (Aelita 21113131)*/
+.a-footer {
+  background-color: #c797cf;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.a-footer-logo {
+  cursor: pointer;
+}
+.a-footer-logo img {
+  width: 100px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: -20px;
+  transition: 0.2s ease-in-out;
+}
+.a-footer-logo img:hover {
+  transform: scale(1.1,1.1); 
+}
+.a-footer-menu a { 
+  margin:0px 40px 0px 150px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: text-decoration-color 800ms;
+}
+.a-footer-menu a:hover {
+  text-decoration: underline 0.15em #eecbff;
+  color: #000000;
+}
+.a-icons img {
+  margin:0px 20px 0px;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.a-icons img:hover {
+  transform: scale(2,2);
+}
+.a-back-to-top {
+  margin-left:20px;
+  width: 30px;
+  height: auto; 
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.a-back-to-top img:hover {
+  transform: scale(1.1,1.1);
+}
 
-@media screen and (max-width: 768px){
-  body {
-    overflow-x: hidden;
+/* Footer Ends  */
+
+/*Aelita CSS (21113131)*/
+
+/* Start of Index.html */
+.a-under-slider {
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  padding: 20px 50px;
+}
+.a-under-slider h1, h2 {
+  text-align: center;
+}
+.a-box {
+  padding: 20px;
+  margin-bottom: 30px;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.a-box h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.a-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+.a-box button {
+  margin: 20px 40px;
+  font-size: 18px;
+}
+#a-who-we-are h1 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#a-who-we-are img {
+ width: 50%;
+ border-radius: 5px;
+}
+.a-home-about {
+  display: flex;
+  margin-bottom: 80px;
+}
+.a-home-about p {
+  margin: 100px 90px 80px -150px;
+  z-index: 99;
+  justify-content: center;
+  padding: 40px 60px 20px 60px;
+  background-color: #c797cff1;
+  text-align: center;
+}
+#a-testimonials h1{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.a-cust-review {
+  display: flex;
+  justify-content: space-between; 
+}
+.a-review-box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.a-review-box img {
+  width: 120px;
+  height: 80px;
+  margin: auto;
+}
+.a-stars {
+  margin: auto;
+}
+.a-stars p {
+  padding: 20px 0px 0px 0px;
+  align-items: center;
+}
+.a_star_color {
+  color: #c797cf;
+}
+.checked {
+  color: #d8d21a;
+}
+/* index.html Ends */
+
+/* Contact page Starts*/
+.a-main-contact-area {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-main-contact-area .a-name {
+  max-width: 800px;
+  text-align: center;
+}
+.a-main-contact-area .a-name h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.a-main-contact-area .a-name h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.a-contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.a-contact-container .a-contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+} 
+.a-contact-container .a-contact-info .a-contact-box {
+  position:relative;
+  padding: 20px 0px;
+  display: flex;
+}
+.a-contact-container .a-contact-info .a-contact-box .a-contact-icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  background: #c797cf;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.a-contact-container .a-contact-info .a-contact-box .a-contact-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.a-contact-form {
+  width: 60%;
+  padding: 10px;
+  background: #c797cf;
+
+}
+.a-contact-form .a-input-box {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+}
+.a-contact-form .a-input-box input,
+.a-contact-form .a-input-box textarea  {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  margin: 10px 0px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.a-contact-form .a-input-box input[type="submit"] {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+.a-map-box {
+  width: 100%;
+  padding: 1% 8% 1%;
+  margin-bottom: 30px;
+}
+/* Contact page Ends*/
+
+/* Ross CSS (21132305) */
+/* Services page CSS */
+.heading{
+  text-align:center;
+  background-color: #eecbff;
+  font-size:30px;
+  margin-top: 50px;
+}
+.container-1{
+  background-color: #eecbff;
+  position:inherit;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; 
+  cursor: pointer;
+  margin-left: -15px;
+}
+.flip-card-inner {
+  position: relative;
+   width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-image: linear-gradient(#c797cf, white);
+  color: black;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+.col-md-5{
+  align-content: inherit;
+  text-align: center;
+}
+.services{
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 15px;
+}
+.booking{
+  text-align:center;
+  font-size: 18px;;
+  margin: 50px;
+}
+.a-ross{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+.opener{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+span{
+  font-style: italic;
+}
+/* Services page ends */
+
+/* Gallery CSS */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.column img{
+  width: 300px;;
+  height: 300px;
+  border-style: dashed;
+  border-color: #c797cf;
+  cursor: pointer;
+}
+.row > .column {
+  padding: 0 8px;
+}
+.row{
+  margin-left: 20px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+.col2{
+  margin-left: 2%;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+/* Modal Content */
+.modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+/* Modal Content 2 */
+.modal-content-2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 600px;
+  height: 600px;
+}
+/* The Close Button */
+.close {
+  color: #e8a2c5;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #e8a2c5;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #e8a2c5;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: #e8a2c5;
+  padding: 2px 16px;
+  color: black;
+}
+.demo img{
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.hover-shadow img {
+  transition: 0.3s;  
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 #c797cf, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Gallery page ends */
+
+/*Booking CSS */
+h2{
+  margin: 50px;
+}
+.submit{
+  margin: 40px;
+}
+/* Booking page ends */
+
+/*Steven (21130736) CSS*/
+/*About Page*/
+.s-container-2{
+  margin-bottom: 50px;
+}
+/*Video Player's styling*/
+.stockvideo{
+  text-align:center;
+  margin:0 auto;
+  padding:0px;
+  width: 620px;
+  margin-bottom: 20px;
+}
+#playerContainer{
+  position:relative;
+  width: 620px;
+}
+#videoPlayer{
+  width: 620px;
+}
+#playerControls{
+  top:300px;
+  position: absolute;
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
+}
+input[type="image"] {
+  float:left;
+  height:20px;
+  margin-left:50px;
+  margin-right:5px;
+  margin-top:2px;
+}
+#volImage{
+  margin-right:10px;
+  width:20px;
+}
+
+/*Team Page Steven (21130736)*/
+
+.left-right-side-margins {
+  margin-left:10%;
+  margin-right:10%;
+}
+.team-image{
+  width:100%;
+  height: auto;
+}
+.container-team {
+  margin-top:20px;
+}
+/*Promotion link to webpage*/
+.saleRedirect {
+  width: auto;
+  height: 50px;
+  background-color: #eecbff;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  cursor: pointer;
+}
+@keyframes example {
+  from {background-color: #eecbff;}
+  to {background-color:#ffcbf6;}
+  to {background-color: #d4cbff;}
+}
+.teamHeading{
+  text-align:center;
+  margin-top: 50px; 
+  margin-bottom: 50px;
+}
+/*Information about the company paragraph*/
+.paraInfoAbout{
+  font-size: large;
+  text-align: justify;
+  margin-bottom:50px;
+}
+.infoAbout{
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/*Steven's CSS - Promotion Page*/
+/*Button's styling for game*/
+.game-content-buttons-1, .game-content-buttons-2{
+  display: flex;
+  justify-content: space-around;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+#cream, #hairbrush, #hairdryer, #lipstick, #lotion, #pedicure, #seat, #shampoo, #straightener, #zenstones{
+  background-color: transparent;
+}
+/*Text styling on page*/
+.discountPara {
+  text-align: center;
+  font-size: 15px;
+}
+.discountHead{
+  text-align: center;
+  font-size: larger;
+}
+#endGameMessage {
+  text-align: center;
+  font-size: larger;
+}
+
+/* Media Queries */ 
+@media screen and (max-width: 1300px){
+
+  /*Start Header Nav Aelita (21113131)*/
+  .a-nav li a{
+    padding: 7px 20px 7px 20px;
   }
+  /*End Header Nav*/
+};
+
+@media screen and (max-width: 1240px) {
+
+  /*Start Header Nav Aelita (21113131)*/
+  .a-nav li a{
+    padding: 7px 13px 7px 13px;
+  }
+  /*End Header Nav*/
+
+  /* Footer meqia query starts (Aelita 21113131) */ 
+  .a-footer-logo img {
+    width: 80px;
+    height: 50px;
+    margin-left: 30px;
+  }
+  .a-footer-menu a { 
+    margin:0px 5px 0px 20px;
+    font-size: 15px;
+  }
+  .a-icons img {
+    margin:0px 20px 0px;
+    width: 20px;
+    height: 15px;
+  }
+  .a-back-to-top {
+    margin-left:20px;
+    margin-top: 5px;
+    width: 30px;
+    height: auto; 
+  } /* Footer ends */
+}
+
+@media only screen and (max-width:1024px){
+
+  /* Start Aelita default settings for the website */
+  h1, h2, h3, p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  h1{
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  p {
+    font-size: 20px;
+  } /* End Aelita*/
+
+  /*Start Header Nav Aelita (21113131)*/
+  .a-nav li a{
+    padding: 7px 13px 7px 13px;
+  }
+  /*End Header Nav*/
+
+  /*Start Gallery page Ross*/
+  .column img{
+  width: 80%;
+  height:auto;
+  }
+  .numbertext img{
+    width: 95%;
+    height: auto;
+  }
+  /*End Gallery page */
+
+  /*Start Video pn About us page Steven (21130736)*/
+  .stockvideo{
+    width:100%;
+  }
+  #playerContainer{
+    width:100%;
+  }
+  #videoPlayer{
+    width:100%;
+  }
+  #playerControls{
+    top:120px;
+  }
+  /*End video on About us page */
+
+  /*Start Services page Ross */
+  img{
+    width:90%;
+    height:auto;  
+  }
+  /*End Services page*/
+}
+
+@media screen and (min-width: 900px) {
+
+  /* index page starts (Aelita 21113131) */
+  .a-serviceInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } /* Index page ends */
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Start Steven default settings for the website*/
+  h1, h2, h3, p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  h1{
+    font-size: 25px;  
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4{
+    font-size: 17px;
+  }
+  p {
+    font-size: 15px;
+  }/* End Steven*/
+
+  /*Start Hamburger menu Aelita (2111331)*/
   .a-nav  {
     display: none;
     position: fixed;
@@ -334,780 +934,7 @@ button:hover {
   .a_hamburger.active .a_line:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-
-/* Hamburger menu end */
-/* Header Ends */
-
-
-/*Footer CSS*/
-/* Start (Aelita 21113131)*/
-.a-footer {
-  background-color: #c797cf;
-  width: 100%;
-  padding-top: 3%;
-  padding-bottom: 2%;
-  padding-right: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.a-footer-logo img {
-  width: 100px;
-  height: 60px;
-  margin-left: 30px;
-  margin-top: -20px;
-  transition: 0.2s ease-in-out;
-}
-
-.a-footer-logo img:hover {
-  transform: scale(1.1,1.1); 
-}
-
-.a-footer-menu a { 
-  margin:0px 40px 0px 150px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: text-decoration-color 800ms;
-}
-
-.a-footer-menu a:hover {
-  text-decoration: underline 0.15em #eecbff;
-  color: #000000;
-}
-
-.a-icons img {
-  margin:0px 20px 0px;
-  width: 20px;
-  height: auto;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.a-icons img:hover {
-  transform: scale(2,2);
-}
-
-.a-back-to-top {
-  margin-left:20px;
-  width: 30px;
-  height: auto; 
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.a-back-to-top img:hover {
-  transform: scale(1.1,1.1);
-}
-
-/* Footer Ends  */
-
-/*Aelita CSS (21113131)*/
-
-/* Start of Index.html */
-button {
-  background: #c797cf;
-  color: #ffffff;
-  font-size: 18px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 20px;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover {
-  background: #c797cf;
-  color: #ffffff;
-  border: none;
-  transform: scale(1.2);
-}
-
-.a-under-slider {
-  max-width: 1200px;
-  margin: 60px auto 0 auto;
-  padding: 20px 50px;
-}
-
-.a-under-slider h1, h2 {
-  text-align: center;
-}
-
-.a-box {
-  padding: 20px;
-  margin-bottom: 30px;
-  flex-basis: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-.a-box h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.a-box img {
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-
-}
-.a-box button {
-  margin: 20px 40px;
-  font-size: 18px;
-}
-
-#a-who-we-are h1 {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-#a-who-we-are img {
- width: 50%;
- border-radius: 5px;
-}
-
-.a-home-about {
-  display: flex;
-  margin-bottom: 80px;
-}
-
-.a-home-about p {
-  margin: 100px 90px 80px -150px;
-  z-index: 99;
-  justify-content: center;
-  padding: 40px 60px 20px 60px;
-  background-color: #c797cff1;
-  text-align: center;
-}
-
-#a-testimonials h1{
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.a-cust-review {
-  display: flex;
-  justify-content: space-between; 
-}
-
-.a-review-box {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-}
-
-.a-review-box img {
-  width: 120px;
-  height: 80px;
-  margin: auto;
-}
-.a-stars {
-  margin: auto;
-}
-.a-stars p {
-  padding: 20px 0px 0px 0px;
-  align-items: center;
-}
-.a_star_color {
-  color: #c797cf;
-}
-.checked {
-  color: #d8d21a;
-}
-/* index.html Ends */
-
-/* Contact page Starts*/
-
-.a-main-contact-area {
-  position: relative;
-  min-height: 100vh;
-  padding: 50px 100px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.a-main-contact-area .a-name {
-  max-width: 800px;
-  text-align: center;
-}
-
-.a-main-contact-area .a-name h1 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.a-main-contact-area .a-name h2 {
-  font-size: 25px;
-  font-weight: 500;
-}
-.a-contact-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.a-contact-container .a-contact-info {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-} 
-
-.a-contact-container .a-contact-info .a-contact-box {
-  position:relative;
-  padding: 20px 0px;
-  display: flex;
-}
-
-.a-contact-container .a-contact-info .a-contact-box .a-contact-icon {
-  min-width: 60px;
-  height: 60px;
-  display: flex;
-  background: #c797cf;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.a-contact-container .a-contact-info .a-contact-box .a-contact-text {
-  display: flex;
-  flex-direction: row;
-  margin-left: 20px;
-  margin-top: 10px;
-  flex-direction: column;
-}
-
-.a-contact-form {
-  width: 60%;
-  padding: 10px;
-  background: #c797cf;
-
-}
-
-.a-contact-form .a-input-box {
-  width: 100%;
-  position: relative;
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.a-contact-form .a-input-box input,
-.a-contact-form .a-input-box textarea  {
-  width: 100%;
-  padding: 5px 0px;
-  font-size: 18px;
-  margin: 10px 0px;
-  border: none;
-  outline: none;
-  resize: none;
-}
-
-.a-contact-form .a-input-box input[type="submit"] {
-  width: 100%;
-  padding: 5px 0px;
-  font-size: 18px;
-  margin: 10px 0px;
-  border: none;
-  cursor: pointer;
-}
-
-.a-map-box {
-  width: 100%;
-  padding: 1% 8% 1%;
-  margin-bottom: 30px;
-}
-
-/* Contact page Ends*/
-
-/* Ross CSS (21132305) */
-/* Services page CSS */
-.heading{
-  text-align:center;
-  background-color: #eecbff;
-  font-size:30px;
-  margin-top: 50px;
-}
-.container-1{
-  background-color: #eecbff;
-  position:inherit;
-}
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px; 
-  cursor: pointer;
-  margin-left: -15px;
-}
-.flip-card-inner {
-  position: relative;
-   width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-}
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-.flip-card-back {
-  background-image: linear-gradient(#c797cf, white);
-  color: black;
-  transform: rotateY(180deg);
-  text-align: center;
-}
-.col-md-5{
-  align-content: inherit;
-  text-align: center;
-}
-.services{
-  font-size: 18px;
-  text-align: justify;
-  margin-right: 15px;
-}
-button{
-  background-color:#e8a2c5;
-  color: black;
-  resize: inherit;
-  }
-
-p{
-  font-size: 18px;
-}
-h4{
-  font-size: 20px;
-}
-.booking{
-  text-align:center;
-  font-size: 18px;;
-  margin: 50px;
-}
-.a-ross{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  text-decoration: none;
-}
-.opener{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 40px;
-  font-weight: normal;
-}
-span{
-  font-style: italic;
-}
-@media only screen and (max-width:1020px){
-  img{
-    width:95%;
-    height:auto;  
-  }
-}
-/* Services page ends */
-
-/* Gallery CSS */
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-
-.column img{
-  width: 300px;;
-  height: 300px;
-  border-style: dashed;
-  border-color: #c797cf;
-  cursor: pointer;
-}
-
-button{
-  background-color:#e8a2c5;
-  color: black;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row{
-  margin-left: 20px;
-  
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
-
-.col2{
-  margin-left: 2%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 10px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content{
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* Modal Content 2 */
-.modal-content-2 {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 600px;
-  height: 600px;
-}
-
-/* The Close Button */
-.close {
-  color: #e8a2c5;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #e8a2c5;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #e8a2c5;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: #e8a2c5;
-  padding: 2px 16px;
-  color: black;
-}
-
-.demo img{
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.hover-shadow img {
-  transition: 0.3s;  
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 #c797cf, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media only screen and (max-width:1020px){
-  .column img{
-  width:95%;
-  height:auto;
-  }
-}
-
-@media only screen and (max-width: 1020px){
-  .numbertext img{
-    width: 95%;
-    height: auto;
-  }
-}
-/* Gallery page ends */
-
-/*Booking CSS */
-h2{
-  margin: 50px;
-}
-
-.submit{
-  margin: 40px;
-}
-/* Booking page ends */
-
-/*Steven (21130736) CSS*/
-/*About Page*/
-.s-container-2{
-  margin-bottom: 50px;
-
-}
-/*Video Player's styling*/
-.stockvideo{
-  text-align:center;
-  margin:0 auto;
-  padding:0px;
-  width: 620px;
-  margin-bottom: 20px;
-}
-
-#playerContainer{
-  position:relative;
-  width: 620px;
-}
-
-#videoPlayer{
-  width: 620px;
-}
-
-#playerControls{
-  top:300px;
-  position: absolute;
-  width:100%;
-  padding:5px;
-  box-sizing:border-box;
-}
-
-input[type="image"] {
-  float:left;
-  height:20px;
-  margin-left:50px;
-  margin-right:5px;
-  margin-top:2px;
-}
-
-#volImage{
-  margin-right:10px;
-  width:20px;
-}
-/*Video to change when approching tablet size*/
-@media only screen and (max-width:480px){
-  .stockvideo{
-    width:100%;
-  }
-  #playerContainer{
-    width:100%;
-  }
-  #videoPlayer{
-    width:100%;
-  }
-  #playerControls{
-    top:120px;
-  }
-}
-
-/*Video to change when approching phone size*/
-@media only screen and (max-width:320px){
-  .stockvideo{
-    width:100%;
-  }
-  #playerContainer{
-    width:100%;
-  }
-  #videoPlayer{
-    width:100%;
-  }
-  #playerControls{
-    top:100px;
-  }
-}
-
-/*Team Page*/
-
-.left-right-side-margins {
-  margin-left:10%;
-  margin-right:10%;
-}
-.team-image{
-  width:100%;
-  height: auto;
-}
-.container-team {
-  margin-top:20px;
-}
-/*Promotion link to webpage*/
-.saleRedirect {
-  width: auto;
-  height: 50px;
-  background-color: #eecbff;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: 5;
-  cursor: pointer;
-}
-@keyframes example {
-  from {background-color: #eecbff;}
-  to {background-color:#ffcbf6;}
-  to {background-color: #d4cbff;}
-}
-.teamHeading{
-    text-align:center;
-    margin-top: 50px; 
-    margin-bottom: 50px;
-}
-/*Information about the company paragraph*/
-.paraInfoAbout{
-  font-size: large;
-  text-align: justify;
-  margin-bottom:50px;
-}
-.infoAbout{
-  width:75%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-/*Steven's CSS - Promotion Page*/
-/*Button's styling for game*/
-.game-content-buttons-1, .game-content-buttons-2{
-  display: flex;
-  justify-content: space-around;
-  margin-top:20px;
-  margin-bottom:20px;
-}
-#cream, #hairbrush, #hairdryer, #lipstick, #lotion, #pedicure, #seat, #shampoo, #straightener, #zenstones{
-  background-color: transparent;
-}
-/*Text styling on page*/
-.discountPara {
-  text-align: center;
-  font-size: 15px;
-}
-
-.discountHead{
-  text-align: center;
-  font-size: larger;
-}
-
-#endGameMessage {
-  text-align: center;
-  font-size: larger;
-}
-
-/* Media Queries */
-@media screen and (min-width: 900px) {
-
-  /* index page starts (Aelita 21113131) */
-  .a-serviceInfo{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  } /* Index page ends */
-
-  
-} 
-  @media screen and (max-width: 1024px) {
-  /* Footer meqia query starts (Aelita 21113131) */ 
-  .a-footer-logo img {
-    width: 80px;
-    height: 50px;
-    margin-left: 30px;
-  }
-  .a-footer-menu a { 
-    margin:0px 5px 0px 20px;
-    font-size: 15px;
-  }
-  .a-icons img {
-    margin:0px 20px 0px;
-    width: 20px;
-    height: 15px;
-  }
-  .a-back-to-top {
-    margin-left:20px;
-    margin-top: 5px;
-    width: 30px;
-    height: auto; 
-  } /* Footer ends */
-}
-
-@media screen and (max-width: 768px) {
-
-  /*Promotion Start - steven*/
-
-
-  /* Promotion Ends - Steven*/
+  /* Hamburger menu end */
 
   /* start Contact page media query (Aelita 21113131) */
   .a-contact-box {
@@ -1166,7 +993,6 @@ input[type="image"] {
     padding: 20px 0px 0px 0px;
     align-items: center;
   }
-  
   /* End index page media query (Aelita 21113131)*/
 
 /* Footer meqia query starts (Aelita 21113131) */
@@ -1216,24 +1042,47 @@ input[type="image"] {
   } /* Footer end */
 }
 
+
+@media screen and (max-width: 480px){
+
+  /* Start Aelita default settings for the website*/
+  h1, h2, h3, p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 19px;
+  }
+  h3{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  h4{
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  } /* End Aelita*/
+} 
+
+
 @media screen and (max-width: 380px){
 
   /* Start index page media query (Aelita 21113131)*/
   /*Start of services*/
-
   .a-main-contact-area {
     padding: 50px 20px;
   }
-
   .a-main-contact-form {
     margin-top: 0px;
     margin-left: 0px;
   } 
-
   h2{
     margin: 0px;
+    font-size: 18px;
   }
-
   .a-box img {
     width: 250px;
     height: 250px;
@@ -1268,14 +1117,30 @@ input[type="image"] {
     margin-left: -300px;
     margin-right: 30px;
   }
-  /*Start of review and stars*/
+  /*End of About us index page*/
+
+  /*Start of review and stars on index page*/
   #a-testimonials {
    display: none;
   }
   /* End index page media query (Aelita 21113131)*/
 
-  /* start Contact page media query (Aelita 21113131) */
+  /*Start video on about us page Steven (21130736)*/
+  .stockvideo{
+    width:100%;
+  }
+  #playerContainer{
+    width:100%;
+  }
+  #videoPlayer{
+    width:100%;
+  }
+  #playerControls{
+    top:100px;
+  }
+  /*End of About us page*/
 
+  /* start Contact page media query (Aelita 21113131) */
     /*Contact page*/
     .a-contact-container {
       flex-wrap: wrap;
@@ -1309,3 +1174,4 @@ input[type="image"] {
     height: 18px; 
   } /* Footer end */
 }
+
