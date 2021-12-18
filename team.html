@@ -47,36 +47,37 @@
         <p style="display: flex; justify-content: center; margin-top: 20px;">To make an appointment, click here:</p>
         <a href="booking.html" class="a-ross"><button onclick="book()" style="margin-top: 10px; margin-bottom: 10px;" > Book An Appointment</button></a>
         <div class="saleRedirect" style="margin-bottom:30px;">
-            <a href="promotion.html"><h3 style="text-align: center; font-size: 30px;">Click here! Up 25% off!</h3></a>
+            <a href="promotion.html"><h3 style="text-align: center;">Click here! Up 25% off!</h3></a>
         </div>
         <!--Carosel of images-->
-        <div class="container-1">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/hairdress1_small.WebP" class="d-block w-100" alt="Hairdresser styling clients hair">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/hairdress2_small.WebP" class="d-block w-100" alt="Hairdresser preparing clients hair">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/staff1_small.WebP" class="d-block w-100" alt="Staff picking products">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/staff2_small.WebP" class="d-block w-100" alt="Staff preparing hair coloring">
-                  </div>
-                </div>
-                    <!--Buttons used to move between images-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="background-color:transparent;">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="background-color:transparent;">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+        <!--Start of Slider-->
+         <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="Containers">
+                <img src="images/hairdress1_small.WebP" style="width:100%">
+            </div>
+            <div class="Containers">
+                <img src="images/hairdress2_small.WebP" style="width:100%">
+            </div>
+            <div class="Containers">
+                <img src="images/staff1_small.WebP" style="width:100%">
+            </div>
+            <div class="Containers">
+                <img src="images/staff2_small.WebP" style="width:100%">
+            </div>
+            <!-- Back and forward buttons -->
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
+        <!-- The circles/dots -->
+        <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+        </div>
+    <!-- End of Slider-->
         <!--Each team member has an image in box 1 & descriptor in box 2-->
         <!--Team member 1-->
         <div class="container-team">
@@ -85,7 +86,7 @@
                         <img class="team-image" src="images/staff_member1.WebP" alt="Administration - Jessie">
                     </div>
                     <div class="col-sm-6 offset-1, justify-content-centre,">
-                        <h2>Welcoming you on your arrival</h2>
+                        <h3>Welcoming you on your arrival</h3>
                         <h3>Jessie at reception</h3>
                         <p>Jessie has worked with us for the past five years and will help you orgnainse your day at Lotus Beauty Salon.
                             Having studied at University College of Cork, she graduated with with a degree in management and business organisation. 
@@ -100,7 +101,7 @@
                     <img class="team-image" src="images/staff_member2.WebP" alt="Nails & Makeup - Emma">
                 </div>
                 <div class="col-sm-6 offset-1, justify-content-centre">
-                    <h2>Event or night out?</h2>
+                    <h3>Event or night out?</h3>
                         <h3>Emma will sort your nails and makeup</h3>
                         <p>Emma has been part of the team with the last three years and has worked wonders on our clients. Emma trained in Cork in hairdressing and makeup at Crawford,
                             after which she studied nails and artistic creations in New York on a scholarship from the University of Cosmotology in New York. She developed many skills 
@@ -115,7 +116,7 @@
                     <img class="team-image" src="images/staff_member3.WebP" alt="Makeup & Massage - Shauna">
                 </div>
                 <div class="col-sm-6 offset-1, justify-content-centre">
-                    <h2>Or just looking to relax?</h2>
+                    <h3>Or just looking to relax?</h3>
                     <h3>Shauna is our trained masseuse</h3>
                         <p>Shauna has been our massuese with the last two years. Having returned from Australia where she studied holistic massage therapy, she is now
                             head of our massage and wellbeing department. Here she proves various different styles of massages and in the last year, has set up classes in which 
@@ -130,7 +131,7 @@
                     <img class="team-image" src="images/staff_member4.WebP" alt="Hair - James">
                 </div>
                 <div class="col-sm-6 offset-1, justify-content-centre">
-                    <h2>Need a hair do?</h2>
+                    <h3>Need a hair do?</h3>
                     <h3>James will change your style</h3>
                         <p>James has been our stylist and hairdresser over the last ten years. Prior, he studied cosmotology under his mentor Johnthan Van Ness for four years. 
                             During which, he worked on the set of Queer Eye for Netflix being Van Ness's own personal cosmotologist. At present, James runs our hair and styling department
