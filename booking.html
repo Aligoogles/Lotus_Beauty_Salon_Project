@@ -9,71 +9,72 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="stylesheets/main_stylesheet.css" type="text/css" rel="stylesheet">
 </head>
-<body> 
-    <header>
-        <div id="a-header">
-            <div class="a-logo-cont" onclick="a_backHome()">
-                <img class="a-logo" src="images/Lotus_beauty.webp" alt="Lotus-flower" >
-            </div>
-            <div class="a-headNav-cont">
-                <div class="a-header-cont">
-                    <h1>Lotus Beauty Salon</h1>
-                </div>                   
-                <nav class="a-nav-cont">
-                    <ul class="a-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li> <a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
-                    </ul>
-                    <div class="a_hamburger">
-                        <div class="a_line"></div>
-                        <div class="a_line"></div>
-                        <div class="a_line"></div>
-                    </div>
-                </nav>
-            </div>
-            <div class="a-logo-cont">
-                <img class="a-logo-number" src="images/Lotus_beauty.webp" alt="Lotus-flower" onclick="a_backHome()">
-            </div>  
-        </div>     
-    </header>
-    <main>
+    <body> 
+        <header>
+            <div id="a-header">
+                <div class="a-logo-cont" onclick="a_backHome()">
+                    <img class="a-logo" src="images/Lotus_beauty.webp" alt="Lotus-flower" >
+                </div>
+                <div class="a-headNav-cont">
+                    <div class="a-header-cont">
+                        <h1>Lotus Beauty Salon</h1>
+                    </div>                   
+                    <nav class="a-nav-cont">
+                        <ul class="a-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li> <a href="services.html">Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                        <div class="a_hamburger">
+                            <div class="a_line"></div>
+                            <div class="a_line"></div>
+                            <div class="a_line"></div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="a-logo-cont">
+                    <img class="a-logo-number" src="images/Lotus_beauty.webp" alt="Lotus-flower" onclick="a_backHome()">
+                </div>  
+            </div>     
+        </header>
+    
+        <main>
             <h1 style="text-align: center;">Make an Appointment</h1>
             <h2 style="font-size: 25px; text-align: center;">Please fill out the form below to <span style="text-decoration: underline;">make an appoinment</span> with us at The Lotus Beauty Salon. Thank you.</h2>
+            
             <div class="conatiner-1">
-                <form class="formBooking" id="hide" action="#" onsubmit="formChange(); return false" style="display: flex; justify-content: center; align-items: center;">
-                    <fieldset>
-                        <div class="r-form">
-                            <form id="r-form" onsubmit="return validateForm()">
-                                <h2>PLease fill out the form below to make an appointment.</h2>
-                                
-                                <div class="r-input-box">
-                                    <input type="text" id="fullname" name="fullname" required="required" placeholder="Full Name">
-                                </div>
-                            
-                                <div class="r-input-box">
-                                    <input type="text" id="email" name="email" required="required" placeholder="Email">
-                                </div>
-        
-                                <div class="r-input-box">
-                                    <input type="tel" id="pnum" name="pnum" required="required" placeholder="Phone no">
-                                </div>
+                <div class="r-form-1">
+                    <form id="r-form" onsubmit="return validateForm()">
+                        <h2>PLease fill out the form below to make an appointment.</h2>
+                        
+                        <div class="r-input-box">
+                            <input type="text" id="fullname" name="fullname" required="required" placeholder="Full Name">
+                        </div>
                     
-                                <div class="r-input-box">
-                                    <textarea id="message" name="message" required="required" placeholder="Let us know the services you would like to recieve by typing them in here:"rows="5"></textarea>
-                                </div>
-                                
-                                <div class="r-input-box">
-                                    <input type="submit" value="Submit">
-                                    <p id="r-success"></p>
-                                </div>
-                            </form>
-                    </fieldset>
-        </div>
+                        <div class="r-input-box">
+                            <input type="text" id="email" name="email" required="required" placeholder="Email">
+                        </div>
+
+                        <div class="r-input-box">
+                            <input type="text" id="pnum" name="pnum" required="required" placeholder="Phone no">
+                        </div>
+            
+                        <div class="r-input-box">
+                            <textarea id="message" name="message" required="required" placeholder="Let us know the services you would like to recieve by typing them in here:"rows="5"></textarea>
+                        </div>
+                        
+                        <div class="r-input-box">
+                            <input type="submit" value="Submit">
+                            <p id="r-success"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </main>
+        
         <footer>
             <div class="a-footer">
                 <div class="a-footer-logo">
@@ -102,7 +103,9 @@
                 </div>
             </div>
         </footer>
+
         <script src="scripts/aelitasJavaScript.js"></script>
         <script src="scripts/rossJavaScript.js"></script>
-</body>
+
+    </body>
 </html>
