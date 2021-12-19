@@ -740,12 +740,14 @@ input[type="image"] {
   background-color: #eecbff;
   animation-name: example;
   animation-duration: 5s;
-  animation-iteration-count: 5;
+  animation-iteration-count: 25;
   cursor: pointer;
+  border-radius: 10px;
 }
 @keyframes example {
-  from {background-color: #eecbff;}
-  to {background-color:#ffcbf6;}
+  from {background-color: #d4cbff;}
+  to {background-color: #ffeecb;}
+  to {background-color: #cbffee;}
   to {background-color: #d4cbff;}
 }
 .teamHeading{
@@ -769,7 +771,9 @@ input[type="image"] {
   margin-bottom:20px;
 }
 #cream, #hairbrush, #hairdryer, #lipstick, #lotion, #pedicure, #seat, #shampoo, #straightener, #zenstones{
-  background-color: transparent;
+  background-image: linear-gradient(#ffeecb, #eecbff);
+  border: #cbffee;
+  border-style: groove;
 }
 /*Text styling on page*/
 .discountPara {
