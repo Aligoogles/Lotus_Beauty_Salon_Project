@@ -389,8 +389,10 @@ p {
   border: none;
   cursor: pointer;
 }
+/*Map on the contact page*/
 .a-map-box {
   width: 100%;
+  height: 400px;
   padding: 1% 8% 1%;
   margin-bottom: 30px;
 }
@@ -508,6 +510,7 @@ span{
 .column {
   float: left;
   width: 25%;
+  margin: 15px 0px 15px 0px;
 }
 .col2{
   margin-left: 2%;
@@ -1059,6 +1062,22 @@ input[type="image"] {
 }
 
 @media screen and (max-width: 600px){
+
+  /*Start Gallery page light box Ross */
+  #myModal {
+    overflow-x: hidden;
+    overflow-y: auto !important; 
+  }
+  .column {
+    float: left;
+    width: 40%;
+    margin: 5px 3px 5px 3px;
+  }
+  .row{
+    margin-left: 50px; 
+  }
+  /*End Gallery page lightbox*/
+
    /*footer (Aelita 21113131)*/
    .a-footer-logo img {
     width: 40px;
@@ -1105,6 +1124,11 @@ input[type="image"] {
   p {
     font-size: 12px;
   } /* End Aelita*/
+
+  /*Testimonial area*/
+  #a-testimonials {
+    display: none;
+   }
 } 
 
 
