@@ -44,7 +44,7 @@
 <main class="left-right-side-margins">
     <!--Infromation about how to play the game-->
     <h1 class="discountHead" style="margin-top: 50px; margin-bottom: 20px;">Get up to 25% off by playing our game!</h1>
-    <a href="booking.html" class="a-ross"><button onclick="book" style="margin-top: 10px; margin-bottom: 10px;" > Book An Appointment</button></a><br>
+    <a class="a-ross"><button onclick=bookApp() style="margin-top: 10px; margin-bottom: 10px;" >Book An Appointment</button></a><br>
     <p class="discountPara">Click on the icons below. Find the code in one of the boxes. The code changes boxes each turn</p>
     <p class="discountPara">Each level you have up to 5 clicks!</p>
     <p class="discountPara">If you pick the right icon in under 5 clicks, you get a code and move to the next level.</p>
@@ -70,7 +70,7 @@
         <button onclick="checkWin(this.id)" id="zenstones"><img src="images/discountImages/zenstones.png" alt="zenstones"></button>
     </div>
     <h4 style="margin-top: 50px; margin-bottom: 20px;" id="endGameMessage">Your Results!</h4>
-    <p class="booking">If you are interested in any of our treatments, click <a href="booking.html" class="a-ross"><button onclick="book()" class="button-ross"> Book An Appointment</button></a>
+    <p class="booking">If you are interested in any of our treatments, click <a class="a-ross"><button onclick=bookApp()> Book An Appointment</button></a>
         While getting your <span style="font-style:italic ;">hair</span>, <span style="font-style:italic">nails</span> or <span>make-up</span> done or just wanting a relaxing <span>massage</span>, we offer complimentary tea, coffee, wine, prossecco and beer to our clients. 
         On top of this, we also offer free aromatherapy to our clients to make their appointment as relaxing as can be.
     </p>
@@ -104,6 +104,7 @@
     </div>
 </footer>
 <script src="scripts/stevensJavaScript.js" ></script>
+<script src="scripts/rossJavaScript.js"></script>
 <script src="scripts/aelitasJavaScript.js" ></script>
 </body>
 </html>
