@@ -180,7 +180,7 @@ p {
 .a-footer-logo img:hover {
   transform: scale(1.1,1.1); 
 }
-/*Menu lit items*/
+/*Menu items*/
 .a-footer-menu a { 
   margin:0px 40px 0px 150px;
   font-size: 20px;
@@ -217,7 +217,9 @@ p {
 /*Aelita CSS (21113131)*/
 
 /* Start of Index.html */
-
+.a-size-slider {
+  margin: 50px 140px 50px 140px;
+}
 .a-under-slider {
   max-width: 1200px;
   margin: 60px auto 0 auto;
@@ -248,6 +250,7 @@ p {
   margin: 20px 40px;
   font-size: 18px;
 }/*End */
+
 /*Start About us section on the index page*/
 #a-who-we-are h1 {
   margin-top: 80px;
@@ -392,9 +395,11 @@ p {
 /*Map on the contact page*/
 .a-map-box {
   width: 100%;
-  height: 400px;
   padding: 1% 8% 1%;
   margin-bottom: 30px;
+}
+iframe {
+  height: 400px;
 }
 /* Contact page Ends*/
 
@@ -1148,6 +1153,12 @@ input[type="image"] {
 @media screen and (max-width: 380px){
 
   /* Start index page media query (Aelita 21113131)*/
+
+  /*Start of slider on index page*/
+  .a-size-slider {
+    margin: 0px;
+  }
+  /*End of slider*/
   /*Start of services*/
   .a-main-contact-area {
     padding: 50px 20px;
@@ -1225,10 +1236,13 @@ input[type="image"] {
   /*Map on contact page*/
   .a-map-box {
     width: 100%;
-    height: 50%;
     padding: 1% 4% 1%;
     margin-bottom: 10px;
-  }/* End Contact page media query (Aelita 21113131) */
+  }
+  iframe {
+    height: 20%;
+  }
+  /* End Contact page media query (Aelita 21113131) */
 
  /*footer (Aelita 21113131)*/
   .a-footer-logo img {

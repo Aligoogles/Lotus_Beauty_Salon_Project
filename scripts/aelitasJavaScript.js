@@ -79,11 +79,11 @@ function validateForm() {
     if(name.indexOf(" ") != -1){
         name = name.split(" ");
         if(!name[1].length >= 1){
-            alert("Name must contain two or more words");
+            alert("Name must contain two or more words(ie. Full Name)");
             return false;
         }
     }else{
-        alert("Name must contain two or more words");
+        alert("Name must contain two or more words (ie. Full Name)");
         return false;
     }
 
@@ -110,7 +110,7 @@ function validateForm() {
     //test phone number is only numbers then test if between 10 & 12 digits long
     for( let i = 0; i < number.length; i++){
         if(isNaN(number.charAt(i)) && !(number.charAt(i) === " ") ){
-            alert("Phone number must contain only digits");
+            alert("Phone number must contain only digits, between 10 and 12 digits long");
             return false;
         }
     }
