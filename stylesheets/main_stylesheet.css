@@ -53,7 +53,6 @@ h3 {
   font-size: 22px;
 }
 p {
-  text-align: justify;
   font-size: 18px;
 } 
 /* Ross end */
@@ -167,7 +166,7 @@ p {
   padding-right: 2%;
   display: flex;
   justify-content: space-between;
-}
+}/*Footer logo*/
 .a-footer-logo {
   cursor: pointer;
 }
@@ -181,6 +180,7 @@ p {
 .a-footer-logo img:hover {
   transform: scale(1.1,1.1); 
 }
+/*Menu lit items*/
 .a-footer-menu a { 
   margin:0px 40px 0px 150px;
   font-size: 20px;
@@ -191,6 +191,7 @@ p {
   text-decoration: underline 0.15em #eecbff;
   color: #000000;
 }
+/*Social media icons*/
 .a-icons img {
   margin:0px 20px 0px;
   width: 20px;
@@ -201,6 +202,7 @@ p {
 .a-icons img:hover {
   transform: scale(2,2);
 }
+/*Scroll to top button*/
 .a-back-to-top {
   margin-left:20px;
   width: 30px;
@@ -210,13 +212,12 @@ p {
 }
 .a-back-to-top img:hover {
   transform: scale(1.1,1.1);
-}
-
-/* Footer Ends  */
+}/* Footer Ends  */
 
 /*Aelita CSS (21113131)*/
 
 /* Start of Index.html */
+
 .a-under-slider {
   max-width: 1200px;
   margin: 60px auto 0 auto;
@@ -225,6 +226,7 @@ p {
 .a-under-slider h1, h2 {
   text-align: center;
 }
+/*Start Our services section on the index page*/
 .a-box {
   padding: 20px;
   margin-bottom: 30px;
@@ -245,7 +247,8 @@ p {
 .a-box button {
   margin: 20px 40px;
   font-size: 18px;
-}
+}/*End */
+/*Start About us section on the index page*/
 #a-who-we-are h1 {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -265,7 +268,8 @@ p {
   padding: 40px 60px 20px 60px;
   background-color: #c797cff1;
   text-align: center;
-}
+}/*End */
+/*Testimonial section on the index page*/
 #a-testimonials h1{
   margin-top: 100px;
   margin-bottom: 50px;
@@ -283,7 +287,8 @@ p {
   width: 120px;
   height: 80px;
   margin: auto;
-}
+}/*End */
+/*Star ratings*/
 .a-stars {
   margin: auto;
 }
@@ -296,7 +301,7 @@ p {
 }
 .checked {
   color: #d8d21a;
-}
+}/*End */
 /* index.html Ends */
 
 /* Contact page Starts*/
@@ -359,7 +364,6 @@ p {
   width: 60%;
   padding: 10px;
   background: #c797cf;
-
 }
 .a-contact-form .a-input-box {
   width: 100%;
@@ -982,7 +986,6 @@ input[type="image"] {
   }
   .a-contact-form {
   width: 100%;
- 
   }
   .a-map-box {
     width: 100%;
@@ -999,7 +1002,7 @@ input[type="image"] {
     width: 150px;
     height: 150px;
     border-radius: 5px;
-  }
+  }/*About us section on the index page*/
   .a-home-about p {
     margin: 0px -60px 0px -100px;
     padding: 10px 40px 10px 40px;
@@ -1011,14 +1014,15 @@ input[type="image"] {
     border-radius: 5px;
    }
    .a-box {
-     width: 50%;
-     float: right;
+    width: 50%;
+    float: right;
    }
    .a-home-about p {
-     font-size: 10px;
+    font-size: 10px;
     margin: auto;
     padding: 20px;
   }
+  /*Testimonial area*/
   .a-cust-review p{
     font-size: 12px;
   }
@@ -1177,10 +1181,11 @@ input[type="image"] {
   /*End of About us page*/
 
   /* start Contact page media query (Aelita 21113131) */
-    /*Contact page*/
-    .a-contact-container {
-      flex-wrap: wrap;
-    }
+  /*Contact page*/
+  .a-contact-container {
+    flex-wrap: wrap;
+  }
+  /*Map on contact page*/
   .a-map-box {
     width: 100%;
     height: 50%;
