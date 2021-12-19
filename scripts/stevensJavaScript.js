@@ -139,25 +139,26 @@ function endGame(){
         winStatus="won";
     }
     let codeVoc="";
+    let codeNumber=Math.floor(Math.random()*100000000)+1000000;
     if(winCount==2){
-        codeVoc="Here is 5% off! Code:Beauty5%per";
+        codeVoc="Here is 5% off! Code: "+codeNumber;
     }
     else if(winCount==3){
-        codeVoc="Here is 10% off! Code:BEauty10%per";
+        codeVoc="Here is 10% off! Code: "+codeNumber;
     }
     else if(winCount==4){
-        codeVoc="Here is 15% off! Code:BEAuty15%per";
+        codeVoc="Here is 15% off! Code: "+codeNumber;
     }
     else if(winCount==5){
-        codeVoc="Here is 20% off! Code:BEAUty20%per";
+        codeVoc="Here is 20% off! Code: "+codeNumber;
     }
     else if(winCount==6){
-        codeVoc="Here is 25% off! Code:BEAUTy25%per";
+        codeVoc="Here is 25% off! Code: "+codeNumber;
     }
     else{
         codeVoc="";
     }
-    let endProGame="It took "+playCount+" changes but you have "+winStatus+". </br>"+codeVoc;
+    let endProGame="It took "+playCount+" changes but you have "+winStatus+". </br>"+codeVoc+"</br>Note: Only one code can be used on one booking at a time";
     document.getElementById("endGameMessage").innerHTML=endProGame;
 }
 
