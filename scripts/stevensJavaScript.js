@@ -129,7 +129,7 @@ function compare(userChoice,computerPick){
     return result;
 }
 function clickAndWin(){
-    let messClickAndWin="Number of Clicks: "+playCount+"</br> Level Number: "+winCount;
+    let messClickAndWin="Number of Clicks: "+playCount+" out of "+winCount*5+"</br> Level Number: "+winCount;
     document.getElementById("clickResults").innerHTML=messClickAndWin;
 }
 /*Returning results to the page*/

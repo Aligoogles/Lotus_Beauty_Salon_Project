@@ -450,6 +450,24 @@ p {
   align-content: inherit;
   text-align: center;
 }
+.services{
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 15px;
+}
+.booking{
+  text-align:center;
+  margin: 50px;
+}
+.r-input-box {
+ margin-left: 10%;
+ margin-right:auto;
+ margin-top: 10px;
+ margin-bottom:10px;
+}
+#fullname, #email, #pnum, #message{
+  width:200px;
+}
 
 .a-ross{
   display: flex;
@@ -674,6 +692,7 @@ input[type="image"] {
 }
 .container-team {
   margin-top:20px;
+  margin-left:-60px;
 }
 * {box-sizing:border-box}
 .slideshow-container {

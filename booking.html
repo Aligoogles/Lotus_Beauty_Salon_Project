@@ -42,14 +42,12 @@
         </header>
     
         <main>
-            <h1 style="text-align: center;">Make an Appointment</h1>
+            <h1 style="text-align: center; margin-top:30px; margin-bottom:30px;">Make an Appointment</h1>
             <h2 style="font-size: 25px; text-align: center;">Please fill out the form below to <span style="text-decoration: underline;">make an appoinment</span> with us at The Lotus Beauty Salon. Thank you.</h2>
-            
-            <div class="conatiner-1">
-                <div class="r-form-1">
-                    <form id="r-form" onsubmit="return validateForm()">
-                        <h2>PLease fill out the form below to make an appointment.</h2>
-                        
+            <p style="text-align:center; margin-bottom:50px;">We require that you provide your name, email and phone number so that we can contact you.</br>Please add what treatments you would like in box below.</br>Jessie our receptionist will contact you.</p>
+            <div class="conatiner-1, row" style="margin-bottom:50px">
+                <div class="col-sm-3">
+                    <form id="r-form" onsubmit="return formChange()">
                         <div class="r-input-box">
                             <input type="text" id="fullname" name="fullname" required="required" placeholder="Full Name">
                         </div>
@@ -61,9 +59,33 @@
                         <div class="r-input-box">
                             <input type="text" id="pnum" name="pnum" required="required" placeholder="Phone no">
                         </div>
-            
                         <div class="r-input-box">
-                            <textarea id="message" name="message" required="required" placeholder="Let us know the services you would like to recieve by typing them in here:"rows="5"></textarea>
+                            <label for="Hair">Getting your hair done?</label>
+                            <select id="select-box-1">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="r-input-box">
+                            <label for="Nails">Getting your nails done?</label>
+                            <select id="select-box-2">
+                                <option value="Yes">Yes</option>
+                                <option value="No" selected>No</option>
+                            </select>
+                        </div>
+                        <div class="r-input-box">
+                            <label for="Makeup">Getting your makeup done?</label>
+                            <select id="select-box-3">
+                                <option value="Yes">Yes</option>
+                                <option value="No" selected>No</option>
+                            </select>
+                        </div>
+                        <div class="r-input-box">
+                            <label for="massage">Getting a massage?</label>
+                            <select id="select-box-4">
+                                <option value="Yes">Yes</option>
+                                <option value="No" selected>No</option>
+                            </select>
                         </div>
                         
                         <div class="r-input-box">
@@ -71,6 +93,12 @@
                             <p id="r-success"></p>
                         </div>
                     </form>
+                </div>
+                <div class="col-sm-3 offset-1">
+                    <p>Once you have filled out the form,</br> we'll be in contact with you.</br>We'll call about the date and time.</br>A rearrangement can be arranged.</p>
+                </div>
+                <div class="col-sm-4 offset-1">
+                    <img src="images/staff2_small.WebP" style="width:75%; margin-bottom:20px;">
                 </div>
             </div>
         </main>

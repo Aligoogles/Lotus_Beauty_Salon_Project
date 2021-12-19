@@ -7,17 +7,19 @@ function bookApp(){
 //Javascript for the Form
 function formChange(){
     //Assigning input data into vars
-    let name = document.forms["r-form"]["name"].value;
+    let name = document.forms["r-form"]["fullname"].value;
     let email = document.forms["r-form"]["email"].value;
-    let number = document.forms["r-form"]["number"].value;
-
+    let number = document.forms["r-form"]["pnum"].value;
+    let option1 = document.forms["r-form"]["select-box-1"].value;
+    let option2 = document.forms["r-form"]["select-box-2"].value;
+    let option3 = document.forms["r-form"]["select-box-3"].value;
+    let option4 = document.forms["r-form"]["select-box-4"].value;
     //alert messages
-
     //first name
     if(name.indexOf(" ")!= -1){
       name=name.split(" ");
       if(!name[1].length>=1){
-        alert("First name must be filled in.");
+        alert("First and last name must be filled in.");
         return false;
       }
     }
@@ -25,8 +27,6 @@ function formChange(){
       alert("Please Enter more than one word. Thank you.");
       return false;
     }
-
-
     //email
     if(email.indexOf("@") != -1){
       email= email.split("@");
@@ -46,8 +46,6 @@ function formChange(){
       alert("Email must contain @ symbol");
       return false;
     }
-    
-
     //phone number
     for( let i = 0; i < number.length; i++){
       if(isNaN(number.charAt(i)) && !(number.charAt(i) === " ") ){
@@ -63,27 +61,26 @@ function formChange(){
       alert("Too many digits in phone number");
       return false;
   }
-
-
-  alert("Thank you "+name+". We will get in touch via "+email+ number+" to organise a time and date for your appointment.");
-    return true; 
-
+  /*Selecting and returning Treatment options*/
+  var listOfTreatments=[];
+  if(option1=="Yes"){
+    listOfTreatments.push(" hair");
+  }
+  if(option2=="Yes"){
+    listOfTreatments.push(" nails");
+  }
+  if(option3=="Yes"){
+    listOfTreatments.push(" makeup");
+  }
+  if(option4=="Yes"){
+    listOfTreatments.push(" massage");
+  }
+  alert("Thank you "+name[0]+". We will get in touch by calling you at "+number+" to organise a time and date for your"+listOfTreatments+" appointment.");
+    return true;
  
-//To say form is submitted
-//alert(firstName+ lastName+", thank you for your details. We will be in touch via "+userEmail+ " and "+userNum+" shortly. Your treatments are "+treatment1+" , "+treatment2+''+treatment3+''+ treatment4);
-//alert("Form submitted");
 }
-//To hide the form. 
-//var hideForm=document.getElementById("hide");
-//if (hideForm.style.display ==="none"){
-   // hideForm.style.display="block";
-//}
-//else {
-    //hideForm.style.display="none";
-//}
+
    
-
-
 //Gallery JavaScript for the LightBox Modal
 
 // Open the Modal
